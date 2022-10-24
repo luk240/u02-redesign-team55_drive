@@ -1,6 +1,0 @@
-# exclude everything except !
-./*
-!./index.html
-!./main.scss
-!./exempel_persona.png
-!./README.md
