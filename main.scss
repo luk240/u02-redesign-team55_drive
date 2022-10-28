@@ -1,0 +1,61 @@
+/*===========================
+1. Mobile First
+2. Generall
+3. Navigation
+4. Footer
+===========================*/
+
+/*===================
+1. Mobile First
+===================*/
+
+fwfwfe
+
+/*===================
+2. Generall
+===================*/
+
+* {
+	font-family: Times New Roman, sans-serif;
+}
+
+body {
+	background: #e8edee;
+}
+
+/*===================
+3. Navigation
+===================*/
+
+.header {
+	display: inline-block;
+}
+
+.nav {
+
+}
+
+.nav-items {
+	padding: 2px 4px;
+
+}
+
+.nav-item {
+	display: inline-block;
+}
+
+.nav-item a {
+	text-decoration: none;
+}
+
+.nav-item a:visited {
+	text-decoration: none;
+}
+
+/*===================
+4. Footer
+===================*/
+
+.footer {
+	text-align: center;
+}
