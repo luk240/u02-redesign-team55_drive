@@ -10,29 +10,42 @@ $Col4: #eaeaea;
 
 .hero-outer {
     display: flex;
-    background-image: url(Jam_hero_header_2.jpg);
+    background-image: url(./wes-hicks-MEL-jJnm7RQ-unsplash.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 85vh;
     margin-top: 0%;
     align-items: center;
-    /* opacity: 50%; */
 }
 
 .hero-inner {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     width: 100%;
     color: $Col4;
 
     .Firstline {
+        justify-self: center;
         color: $Col1;
         font-family: Economica-Bold; 
+        font-size: 50em;
+        text-transform: uppercase;
     }
 
     .Secondline {
+        /* align-self: baseline; */
         color: $Col1;
         font-family: Economica-Bold;
+        font-size: 20em;
     }
 }
+
+@media screen and (max-width: 390px) {
+.Firstline {
+    font-size: 20vw; 
+}
+}
+    
