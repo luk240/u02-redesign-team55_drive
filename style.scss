@@ -1,0 +1,54 @@
+$Col1: #fcc700;
+$Col2: #2c2c2c; 
+$Col3: #4b4b4b;
+$Col4: #eaeaea;  
+
+@font-face {
+	font-family: Economica-Bold;
+	src: url(./Economica-Bold/economica/Economica-Bold.ttf);
+} 
+
+* {
+	font-family: Times New Roman, sans-serif;
+}
+
+body {
+	background: #e8edee;
+}
+
+/*===================
+3. Navigation
+===================*/
+
+.header {
+	display: inline-block;
+}
+
+/* .nav {
+
+} */
+
+.nav-items {
+	padding: 2px 4px;
+
+}
+
+.nav-item {
+	display: inline-block;
+}
+
+.nav-item a {
+	text-decoration: none;
+}
+
+.nav-item a:visited {
+	text-decoration: none;
+}
+
+/*===================
+4. Footer
+===================*/
+
+.footer {
+	text-align: center;
+}

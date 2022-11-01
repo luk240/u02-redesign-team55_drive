@@ -1,0 +1,38 @@
+$Col1: #fcc700;
+$Col2: #2c2c2c; 
+$Col3: #4b4b4b;
+$Col4: #eaeaea; 
+
+@font-face {
+	font-family: Economica-Bold;
+	src: url(./Economica-Bold/economica/Economica-Bold.ttf);
+} 
+
+.hero-outer {
+    display: flex;
+    background-image: url(Jam_hero_header_2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 85vh;
+    margin-top: 0%;
+    align-items: center;
+    /* opacity: 50%; */
+}
+
+.hero-inner {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: $Col4;
+
+    .Firstline {
+        color: $Col1;
+        font-family: Economica-Bold; 
+    }
+
+    .Secondline {
+        color: $Col1;
+        font-family: Economica-Bold;
+    }
+}
