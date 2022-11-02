@@ -1,19 +1,12 @@
-/*===========================
-1. Mobile First
-2. Generall
-3. Navigation
-4. Footer
-===========================*/
+$Col1: #fcc700;
+$Col2: #2c2c2c; 
+$Col3: #4b4b4b;
+$Col4: #eaeaea;  
 
-/*===================
-1. Mobile First
-===================*/
-
-fwfwfe
-
-/*===================
-2. Generall
-===================*/
+@font-face {
+	font-family: Economica-Bold;
+	src: url(./Economica-Bold/economica/Economica-Bold.ttf);
+} 
 
 * {
 	font-family: Times New Roman, sans-serif;
@@ -31,9 +24,9 @@ body {
 	display: inline-block;
 }
 
-.nav {
+/* .nav {
 
-}
+} */
 
 .nav-items {
 	padding: 2px 4px;
