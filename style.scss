@@ -2,48 +2,27 @@ $Col1: #fcc700;
 $Col2: #2c2c2c; 
 $Col3: #4b4b4b;
 $Col4: #eaeaea;  
+$Font1: Arial, Helvetica, sans-serif;
 
-@font-face {
+/* @font-face {
 	font-family: Economica-Bold;
 	src: url(./Economica-Bold/economica/Economica-Bold.ttf);
-} 
+}  */
+
+@import "./test_hero";
 
 * {
-	font-family: Times New Roman, sans-serif;
+	margin: 0;
+	padding: 0;
 }
 
 body {
-	background: #e8edee;
+	background: $Col4; 
 }
 
 /*===================
 3. Navigation
 ===================*/
-
-.header {
-	display: inline-block;
-}
-
-/* .nav {
-
-} */
-
-.nav-items {
-	padding: 2px 4px;
-
-}
-
-.nav-item {
-	display: inline-block;
-}
-
-.nav-item a {
-	text-decoration: none;
-}
-
-.nav-item a:visited {
-	text-decoration: none;
-}
 
 /*===================
 4. Footer
@@ -51,4 +30,25 @@ body {
 
 .footer {
 	text-align: center;
+	display: flex;
+	background-color: $Col2;
+	font-family: $Font1;
+
+	.footer_wrapper {
+		display: flex;
+		flex-direction: column;
+	}
+	.bottom {
+		font-size: x-small;
+		align-self: baseline;
+	}
+}
+
+@media screen and (min-width: 700px) {
+/*SKRIV REGLER FÖR DESKTOP HÄR*/
+.footer {
+.footer_wrapper {
+	flex-direction: row;
+}
+}
 }
