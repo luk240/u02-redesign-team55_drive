@@ -106,7 +106,7 @@ div.logo {
   border-radius: 10px;
   cursor: pointer;
   z-index: 2;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
 .hamburger:before,
