@@ -1,0 +1,112 @@
+.butiker {
+    display: flex;
+    flex-direction: column;
+    .rubrik {
+        font-family: 'Economica', sans-serif; 
+        font-size: 2rem;
+        text-align: center;
+        color: $Col1; 
+    }
+
+    h2 {
+        font-family: 'Economica', sans-serif; 
+        font-size: 1.5rem;
+        text-align: center;
+        color: $Col1; 
+    }
+}
+
+.butik1, .butik2 {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+
+    .bild1, .bild2 {
+        margin-top: 2em;
+
+        img {
+            width: 100vw;
+        }
+    }
+
+    .address {
+        height: 25vh;
+        background-color: $Col4;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        margin-left: 1em;
+        font-family: $Font1;
+        text-transform: uppercase;
+        align-self: flex-start;
+        a {
+            font-size: large;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-family: $Font1;
+            color: $Col2;
+            &:hover {
+                background-color: $Col1;
+                color: $Col4;
+              }
+            }
+        }
+
+        .recensioner {
+            margin-top: 1em;
+            align-self: flex-start;
+            a {
+                font-family: $Font1;
+                font-size: medium;
+                text-transform: uppercase;
+                text-decoration: none;
+                color: $Col3;
+            }
+        }
+    }
+
+@media screen and (min-width: 700px) {
+
+    .butiker {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            column-gap: 2em;
+            row-gap: 2em;
+
+            .rubrik {
+                grid-column-start: 1;
+                grid-column-end: 4;
+                font-size: 3rem;
+            }
+
+        .butik1, .butik2 {
+            display: grid;
+            grid-row: 2;
+            height: auto;
+
+           .address {
+            height: auto;
+           }
+
+           .recensioner {
+            height: auto;
+           }
+        
+            .bild1, .bild2 {
+                margin-top: 2em;
+        
+                img {
+                    width: 30vw;
+                }
+            }
+        }
+
+        .butik1 {
+            margin-left: 10em;
+        }
+}
+
+}
