@@ -1,0 +1,51 @@
+main {
+  display: flex;
+  margin: 0 auto;
+  width: 80%;
+}
+
+section {
+  flex: 100%;
+  border: 0.2rem solid black;
+  border-radius: 1rem;
+  margin-right: 1.5rem;
+  height: fit-content;
+}
+section h2 {
+  margin: 1rem;
+}
+section div.person {
+  background-color: lightgrey;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  margin: 1rem;
+}
+
+aside {
+  flex: 20%;
+}
+aside h2 {
+  margin-top: 0;
+}
+aside div.qna {
+  border: 1px solid black;
+  border-radius: 1rem;
+  padding: 0.3rem;
+  margin-bottom: 0.5rem;
+}
+aside em::before {
+  content: "F: ";
+  font-style: normal;
+  font-weight: bold;
+  color: orange;
+}
+aside p::before {
+  content: "S: ";
+  font-style: normal;
+  font-weight: bold;
+  color: green;
+}
+aside p {
+  padding-left: 1rem;
+  margin-top: 0.5rem;
+}
