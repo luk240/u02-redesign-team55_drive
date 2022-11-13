@@ -1,0 +1,322 @@
+*{
+    padding: 0;
+    margin: 0;
+    background-origin: border-box;
+    font-family: monospace;
+}
+body{
+    background-color: lightgray;
+}
+nav{
+    background-color: orange;
+    height: 10vh;
+    max-width: 100%;
+    text-align: center;
+    p{
+        padding: 1rem;
+    }
+}
+.omOss{
+    background-color: lightgrey;
+    .aboutContainer{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        .col1{
+                .header{
+                    text-align: center;
+                    font-size: 3em;
+                    font-weight: bold;
+                    background-color: black;
+                    color: white;
+                    .headerOss{
+                        font-size: 2em;
+                        font-weight: bolder;
+                        color: orange;
+                    }
+                }
+                .intro{
+                    background-color: white;
+                    margin-top: 1rem;
+                    margin-bottom: 2rem;  
+                    p{
+                        font-size: 1.2em;
+                        text-align: center;
+                        .welcome{
+                            font-size: 1.5em;
+                            font-weight: bold;
+                        }
+                        .introJam{
+                            font-size: 2em;
+                            font-weight: bolder;
+                            background-color: black;
+                            color: white;
+                        }
+                        .instrument{
+                            font-size: 1.5em;
+                            font-weight: bold;  
+                        }
+                    }
+                }
+            .col1Text{
+                h1{
+                    padding: 1rem;
+                    text-align: center;
+                    font-size: 2em;
+                }
+                p{
+                    font-size: 1em;
+                    padding-top: 1rem;
+                    padding-bottom: 1rem;
+                    .bold{
+                        font-weight: bolder;
+                    }
+                    .numberVisit{
+                        font-size: 1.4em;
+                        font-weight: bolder;
+                        background-color: black;
+                        color: white;
+                    }
+                    .slogan{
+                        font-size: 1.2em;
+                        background-color: white;
+                    }
+                    .visit{
+                        font-size: 1.8em;
+                        font-weight: bold;
+                        text-align: center;
+                        background-color: white;
+                        .numberVisit{
+                            font-size: 1.4em;
+                            font-weight: bolder;
+                            background-color: black;
+                            color: white;
+                        }
+                    }
+                    .slogan{
+                        background-color: white;
+                        p{
+                        font-size: 1.2em;
+                        }
+                    }
+                }
+            }
+            .textCol1Mobile{
+                h3{
+                    text-align: center;
+                    font-size: 1.5em;
+                    margin-top: 1rem;
+                    margin-bottom: 1rem;
+                    background-color: white;
+                }
+                h2{
+                    font-size: 2em;
+                    text-align: center;
+                    margin-top: 1rem;
+                    margin-bottom: 1rem;
+                    background-color: white;
+                }
+            }
+        }
+        .col2{
+            .textCol2Fullscreen{
+                display: none;
+            }
+            margin-top: 2rem;
+            h2{
+                font-size: 2em;
+                text-align: center;
+                margin-top: .5rem;
+                margin-bottom: 1rem;
+            }
+            h3{
+                font-size: 2em;
+                text-align: center;
+                margin-top: 1rem;
+                padding: 1rem;
+            }
+            .aboutPic{
+                background-color: white;
+                margin-top: 1rem;
+                padding: 1rem;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+footer{
+    height: 10vh;
+    margin-top: 2rem;
+    background-color: black;
+    color: white;
+    text-align: center;
+    p{
+        padding: 1rem;
+    }
+}
+@media screen and (min-width: 768px) {
+    .omOss{
+        .aboutContainer{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            .col1{
+                padding: 1rem;
+                .header{
+                    text-align: center;
+                    font-size: 4.5em;
+                    font-weight: bold;
+                    background-color: black;
+                    color: white;
+                    margin-top: 1rem;
+                    .headerOss{
+                        font-size: 2em;
+                        font-weight: bolder;
+                        color: orange;
+                    }
+                }
+                .textCol1Mobile{
+                display: none;
+                }
+            }
+            .col2{
+                margin-top: 2rem;
+                h2{
+                    margin-top: .5rem;
+                    margin-bottom: 1rem;
+                }
+                h3{
+                    font-size: 2em;
+                    text-align: center;
+                    margin-top: 1rem;
+                    background-color: black;
+                    color: white;
+                    padding: 1rem;
+                }
+                .textCol2Fullscreen{
+                    display: grid;
+                    h3{
+                        text-align: center;
+                        font-size: 1.8em;
+                        margin-top: 0;
+                        margin-bottom: 1rem;
+                    }
+                    h2{
+                        font-size: 2em;
+                        background-color: white;
+                    }
+                }
+                .aboutPic{
+                    background-color: white;
+                    margin-top: 1rem;
+                    padding: 1rem;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 1024px) {
+    .omOss{
+        .aboutContainer{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            .col1{
+                padding: 1rem;
+                .header{
+                    text-align: center;
+                    font-size: 6em;
+                    font-weight: bold;
+                    background-color: black;
+                    color: white;
+                    margin-top: 1rem;
+                    margin-bottom: 1rem;
+                    padding-bottom: 2rem;
+                    .headerOss{
+                        font-size: 2em;
+                        font-weight: bolder;
+                        color: orange;
+                    }
+                }
+                .intro{
+                    background-color: white;
+                    margin-top: 1rem;
+                    margin-bottom: 2rem;  
+                    p{
+                        font-size: 1.6em;
+                        text-align: center;
+                        .welcome{
+                            font-size: 1.5em;
+                            font-weight: bold;
+                        }
+                        .introJam{
+                            font-size: 2em;
+                            font-weight: bolder;
+                            background-color: black;
+                            color: white;
+                        }
+                        .instrument{
+                            font-size: 1.5em;
+                            font-weight: bold;  
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 1440px) {
+    .omOss{
+        .aboutContainer{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            .col1{
+                padding: 1rem;
+                .header{
+                    text-align: center;
+                    font-size: 8em;
+                    font-weight: bold;
+                    background-color: black;
+                    color: white;
+                    margin-top: 1rem;
+                    margin-bottom: 1rem;
+                    padding-bottom: 2rem;
+                    .headerOss{
+                        font-size: 2em;
+                        font-weight: bolder;
+                        color: orange;
+                    }
+                }
+                .intro{
+                    background-color: white;
+                    margin-top: 1rem;
+                    margin-bottom: 2rem;  
+                    p{
+                        font-size: 2.2em;
+                        text-align: center;
+                        .welcome{
+                            font-size: 1.5em;
+                            font-weight: bold;
+                        }
+                        .introJam{
+                            font-size: 2em;
+                            font-weight: bolder;
+                            background-color: black;
+                            color: white;
+                        }
+                        .instrument{
+                            font-size: 1.5em;
+                            font-weight: bold;  
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
