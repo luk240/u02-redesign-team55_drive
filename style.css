@@ -18,6 +18,105 @@
   color: #fcc700;
 }
 
+.butiker {
+  display: flex;
+  flex-direction: column;
+}
+.butiker .rubrik {
+  font-family: "Economica", sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  color: #fcc700;
+}
+.butiker h2 {
+  font-family: "Economica", sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #2c2c2c;
+}
+
+.butik1, .butik2 {
+  display: flex;
+  flex-direction: column;
+  height: 50vh;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+.butik1 .bild1, .butik1 .bild2, .butik2 .bild1, .butik2 .bild2 {
+  margin-top: 2em;
+}
+.butik1 .bild1 img, .butik1 .bild2 img, .butik2 .bild1 img, .butik2 .bild2 img {
+  width: 100vw;
+}
+.butik1 .address, .butik2 .address {
+  height: 25vh;
+  background-color: #eaeaea;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  align-self: flex-start;
+}
+.butik1 .address a, .butik2 .address a {
+  font-size: large;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #2c2c2c;
+}
+.butik1 .address a:hover, .butik2 .address a:hover {
+  background-color: #fcc700;
+  color: #eaeaea;
+}
+.butik1 .recensioner, .butik2 .recensioner {
+  margin-top: 1em;
+  align-self: flex-start;
+}
+.butik1 .recensioner a, .butik2 .recensioner a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #4b4b4b;
+}
+
+@media screen and (min-width: 700px) {
+  .butiker {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    -moz-column-gap: 2em;
+         column-gap: 2em;
+    row-gap: 2em;
+  }
+  .butiker .rubrik {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    font-size: 3rem;
+  }
+  .butiker .butik1, .butiker .butik2 {
+    display: grid;
+    grid-row: 2;
+    height: auto;
+  }
+  .butiker .butik1 .address, .butiker .butik2 .address {
+    height: auto;
+  }
+  .butiker .butik1 .recensioner, .butiker .butik2 .recensioner {
+    height: auto;
+  }
+  .butiker .butik1 .bild1, .butiker .butik1 .bild2, .butiker .butik2 .bild1, .butiker .butik2 .bild2 {
+    margin-top: 2em;
+  }
+  .butiker .butik1 .bild1 img, .butiker .butik1 .bild2 img, .butiker .butik2 .bild1 img, .butiker .butik2 .bild2 img {
+    width: 30vw;
+  }
+  .butiker .butik1 {
+    margin-left: 10em;
+  }
+}
 * {
   margin: 0;
   padding: 0;
