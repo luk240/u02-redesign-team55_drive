@@ -4,12 +4,13 @@ $Col3: #4b4b4b;
 $Col4: #eaeaea;  
 $Font1: Arial, Helvetica, sans-serif;
 
-@import "./Styling/test_hero";
-@import "./Styling/butiker";
-@import "./Styling/fungerar";
-@import "./Styling/gitarrer";
-@import "./Styling/om";
-@import "./Styling/kontakt";
+@import "./styling/test_hero";
+@import "./styling/butiker";
+@import "./styling/fungerar";
+@import "./styling/gitarrer";
+@import "./styling/om";
+@import "./styling/kontakt";
+@import "./styling/produkt";
 
 * {
 	margin: 0;
