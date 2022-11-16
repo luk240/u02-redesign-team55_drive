@@ -1,0 +1,129 @@
+body {
+	margin: 0;
+}
+main {margin: 0 auto}
+section {
+	/*max-width: 800px;*/
+	> h2 {
+		text-align: center;
+	}
+	#persons {
+		border-top: 0.2rem solid black;
+		border-bottom: 0.2rem solid black;
+		border-radius: 1rem;
+		height: fit-content;
+		figure { text-align: center; 
+			img {
+			width: 100%; 
+			max-width: 800px;
+		}	}
+		h2 {margin: 1rem;}
+		div.person {
+			background-color: lightgrey;
+			padding: 0.5rem;
+			border-radius: 0.5rem;
+			margin: 1rem;
+		}
+	}
+}
+label#qna-btn {
+	position: relative;
+	margin: 1rem;
+	background: white;
+	color: black;
+	cursor: pointer;
+	background-color: orange;
+	border: solid 2px black;
+	border-radius: 0.5rem;
+	display: block;
+	box-shadow: 0 6px 10px 0 rgba(200,0,0,0.4), 0 6px 20px 0 rgba(0,0,0,0.4);
+	::before {
+		position: absolute;
+		content: "Tryck!";
+		left: 0;
+		text-indent: 1em;
+		font-size: 1rem;
+	}
+	::after {
+		position: absolute;
+		content: "Tryck!";
+		right: 0;
+		margin-right: 1em;
+		font-size: 1rem;
+	}
+}
+#qna-btn + input#qna-show { display: none; }
+#qna-btn + #qna-show[type=checkbox]:not(:checked) ~ #qnas { display: none; } /* show/hide works by selecting the sibling #qnas */
+aside {
+	/*max-width: 400px;*/
+	label h2 {
+		text-align: center;
+	}
+	div.qna {
+		border-top: 1px solid black;
+		border-bottom: 1px solid black;
+		border-radius: 1rem;
+		padding: 0.3rem;
+		margin: 0.5rem 0;
+		em::before {
+			content: "F: ";
+			font-style: normal;
+			font-weight: bold;
+			color: orange;
+		}
+		em {
+			font-style: normal;
+			font-weight: bold;
+		}
+		p::before {
+			content: "S: ";
+			font-style: normal;
+			font-weight: bold;
+			color: green;
+		}
+		p {
+			padding-left: 1rem;
+			margin-top: 0.5rem;
+		}
+	}
+}
+small { 
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	text-decoration: underline;
+}
+footer {
+	height: 10vh;
+	width: 100%;
+	color: white;
+	background-color: darkblue;
+	text-align: center;
+}
+@media screen and (min-width: 1000px) {
+	main {
+		display: flex;
+		justify-content: center;
+		margin: 0 1rem;
+		gap: 1rem;
+		section {
+			flex: 100%;
+			#persons {
+				border: 0.2rem solid black;
+			}
+		}
+		aside {
+			flex: 50%;
+			label#qna-btn {
+				all: initial;
+				::before, ::after {all: unset;}
+			}
+			div.qna {
+				border: 1px solid black;
+			}
+		}
+	}
+	#qna-btn + #qna-show[type=checkbox]:not(:checked) ~ #qnas { display: block; }
+	#qna-btn { pointer-events: none; }
+}
