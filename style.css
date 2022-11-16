@@ -135,26 +135,28 @@ h3 {
   font-size: 1.5rem;
 }
 
-.mikrofon {
+.produkt {
   margin-left: 1em;
   margin-right: 1em;
+  margin-bottom: 2em;
   display: grid;
   grid-template-columns: 1fr;
 }
-.mikrofon .bild-rubrik-wrapper figure > img {
+.produkt .bild-rubrik-wrapper figure > img {
   width: 100%;
   margin-top: 1em;
   margin-bottom: 1em;
 }
-.mikrofon .bild-rubrik-wrapper #rating {
+.produkt .bild-rubrik-wrapper #rating {
   width: 15%;
 }
-.mikrofon .bild-rubrik-wrapper .buy {
+.produkt .bild-rubrik-wrapper .buy {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
+  margin-bottom: 2em;
 }
-.mikrofon .bild-rubrik-wrapper .buy .footer_btn {
+.produkt .bild-rubrik-wrapper .buy .footer_btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -173,19 +175,20 @@ h3 {
   font-family: Arial, Helvetica, sans-serif;
   margin-top: 1em;
 }
-.mikrofon .bild-rubrik-wrapper .buy .footer_btn:hover {
+.produkt .bild-rubrik-wrapper .buy .footer_btn:hover {
   color: #eaeaea;
+  cursor: pointer;
 }
-.mikrofon .info-wrapper ul {
+.produkt .info-wrapper ul {
   margin-bottom: 2em;
   font-family: Arial, Helvetica, sans-serif;
   list-style-type: circle;
   line-height: 2em;
 }
-.mikrofon .info-wrapper .linje {
+.produkt .info-wrapper .linje {
   visibility: none;
 }
-.mikrofon .info-wrapper p {
+.produkt .info-wrapper p {
   font-family: Arial, Helvetica, sans-serif;
   font-size: small;
   margin-left: 2em;
@@ -193,27 +196,124 @@ h3 {
   margin-bottom: 1em;
 }
 
+.övrigt {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 2em;
+}
+.övrigt .relaterat {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+.övrigt .relaterat h4 {
+  font-family: Economica;
+  font-size: medium;
+  text-align: center;
+}
+.övrigt .relaterat .bilder {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.övrigt .relaterat .bilder #rel_1, .övrigt .relaterat .bilder #rel_2, .övrigt .relaterat .bilder #rel_3 {
+  width: 50px;
+  height: 60px;
+  align-self: center;
+  margin-top: 1em;
+  margin-right: 0.2em;
+  margin-left: 0.2em;
+}
+.övrigt #liten_linje {
+  border-left: 2px solid #2c2c2c;
+  height: 14vh;
+  position: absolute;
+  left: 60%;
+  margin-left: -3px;
+}
+.övrigt .recensioner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+.övrigt .recensioner h4 {
+  font-family: Economica;
+  font-size: medium;
+}
+.övrigt .recensioner figure {
+  display: flex;
+  justify-content: center;
+}
+.övrigt .recensioner figure #bubblor {
+  width: 50px;
+  height: 60px;
+  align-self: center;
+  margin-top: 1em;
+}
+
 @media screen and (min-width: 900px) {
-  .mikrofon {
+  .produkt {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(4, auto);
   }
-  .mikrofon .bild-rubrik-wrapper {
+  .produkt .bild-rubrik-wrapper {
     grid-column: 2/4;
   }
-  .mikrofon .bild-rubrik-wrapper figure > img {
+  .produkt .bild-rubrik-wrapper figure > img {
     width: 50%;
     margin-top: 1em;
     margin-bottom: 1em;
   }
+  .övrigt {
+    display: flex;
+    justify-content: space-around;
+  }
+  .övrigt .relaterat h4 {
+    font-size: large;
+    text-align: center;
+    margin-left: 5em;
+  }
+  .övrigt .relaterat .bilder {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 5em;
+  }
+  .övrigt .relaterat .bilder #rel_1, .övrigt .relaterat .bilder #rel_2, .övrigt .relaterat .bilder #rel_3 {
+    width: 150px;
+    height: 160px;
+    align-self: center;
+    margin-top: 1em;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+  }
+  .övrigt .recensioner h4 {
+    font-size: large;
+  }
+  .övrigt .recensioner figure {
+    display: flex;
+    justify-content: center;
+  }
+  .övrigt .recensioner figure #bubblor {
+    width: 100px;
+    height: 160px;
+    align-self: center;
+    margin-top: 1em;
+    margin-right: 18em;
+  }
   .linje {
-    border-left: 3px dotted #2c2c2c;
-    height: 100vh;
+    border-left: 3px solid #2c2c2c;
+    height: 90vh;
     position: absolute;
     left: 50%;
     margin-left: -3px;
-    top: 0;
+  }
+  #liten_linje {
+    display: none;
   }
 }
 * {

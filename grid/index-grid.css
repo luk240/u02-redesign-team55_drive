@@ -13,7 +13,8 @@
 .grid-container {
   display: grid;
   align-items: left;
-  column-gap: 5%;
+  -moz-column-gap: 5%;
+       column-gap: 5%;
   row-gap: 1rem;
   justify-content: center;
   padding: 1rem;
@@ -33,7 +34,8 @@
   width: 100%;
   max-width: 300px;
   height: 230px;
-  object-fit: scale-down;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
   transition: 0.5s ease;
 }
 
@@ -50,6 +52,7 @@
   font-size: 16px;
   padding: 16px 32px;
   pointer-events: none;
+  /*	width: 100%;*/
 }
 
 .grid-item:hover h2 {
@@ -69,4 +72,4 @@
   .grid-container {
     grid-template-columns: auto auto auto;
   }
-}
+}/*# sourceMappingURL=index-grid.css.map */

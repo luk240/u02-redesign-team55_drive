@@ -13,9 +13,10 @@ h3 {
     font-size: 1.5rem;
 }
 
-.mikrofon {
+.produkt {
     margin-left: 1em;
     margin-right: 1em;
+    margin-bottom: 2em;
     display: grid;
     grid-template-columns: 1fr;
 
@@ -33,6 +34,7 @@ h3 {
             font-family: $Font1;
             font-size: 1.5rem;
             font-weight: 700;
+            margin-bottom: 2em;
             .footer_btn {
                 display: flex;
                 align-items: center;
@@ -52,6 +54,7 @@ h3 {
               
                 &:hover {
                   color: $Col4;
+                  cursor: pointer;
                 }
               }
         }
@@ -77,8 +80,66 @@ h3 {
     }
 }
 
+.övrigt {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 2em;
+    .relaterat {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        h4 {
+            font-family: Economica;
+            font-size: medium;
+            text-align: center;
+        }
+        .bilder {
+            display: inline-flex;
+            flex-direction: row;
+            justify-content: space-between;
+            #rel_1, #rel_2, #rel_3 {
+                width: 50px;
+                height: 60px;
+                align-self: center;
+                margin-top: 1em;
+                margin-right: 0.2em;
+                margin-left: 0.2em;
+                }
+        }
+    }  
+    #liten_linje {
+        border-left: 2px solid $Col2;
+        height: 14vh;
+        position: absolute;
+        left: 60%;
+        margin-left: -3px;
+      }
+    .recensioner{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        h4 {
+            font-family: Economica;
+            font-size: medium;
+        }
+        figure {
+            display: flex;
+            justify-content: center;
+            #bubblor {
+                width: 50px;
+                height: 60px;
+                align-self: center;
+                margin-top: 1em;
+                }
+        }
+    }
+}
+
 @media screen and (min-width: 900px) {
-    .mikrofon {
+    .produkt {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: repeat(4, auto);
@@ -92,12 +153,56 @@ h3 {
             }
         }
     }
+
+    .övrigt {
+        display: flex;
+        justify-content: space-around;
+        .relaterat {
+            h4 {
+                font-size:large;
+                text-align: center;
+                margin-left: 5em;
+            }
+        .bilder {
+            display: inline-flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-left: 5em;
+            #rel_1, #rel_2, #rel_3 {
+                width: 150px;
+                height: 160px;
+                align-self: center;
+                margin-top: 1em;
+                margin-right: 0.5em;
+                margin-left: 0.5em;
+                }
+        }
+    }
+    .recensioner {
+        h4 {
+            font-size:large;
+        }
+        figure {
+            display: flex;
+            justify-content: center;
+            #bubblor {
+                width: 100px;
+                height: 160px;
+                align-self: center;
+                margin-top: 1em;
+                margin-right: 18em;
+                }
+        }
+    }
+}
     .linje {
-        border-left: 3px dotted $Col2;
-        height: 100vh;
+        border-left: 3px solid $Col2;
+        height: 90vh;
         position: absolute;
         left: 50%;
         margin-left: -3px;
-        top: 0;
       }
+    #liten_linje {
+        display: none;
+    }
 }
