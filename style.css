@@ -404,7 +404,7 @@ div.logo {
   border-radius: 10px;
   cursor: pointer;
   z-index: 2;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
 .hamburger:before,
@@ -486,7 +486,7 @@ div.logo {
 }
 @media screen and (max-width: 1915px) {
   .hamburger,
-.toggle-menu {
+  .toggle-menu {
     display: block;
   }
   .header {
@@ -507,9 +507,10 @@ div.logo {
     width: 127%;
   }
   .menu li a,
-.menu li a:hover {
+  .menu li a:hover {
     padding: 15px;
     font-size: 24px;
+    text-align: center;
     box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset;
   }
   .footer .footer_wrapper {
