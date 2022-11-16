@@ -5,11 +5,13 @@ $Col4: #eaeaea;
 $Font1: Arial, Helvetica, sans-serif;
 
 @import "./Styling/test_hero";
+@import "./styling/highlights";
 @import "./Styling/butiker";
 @import "./Styling/fungerar";
 @import "./Styling/gitarrer";
 @import "./Styling/om";
 @import "./Styling/kontakt";
+@import "./Styling/footer";
 
 * {
 	margin: 0;
@@ -162,22 +164,6 @@ body {
 4. Footer
 ===================*/
 
-.footer {
-	text-align: center;
-	display: flex;
-	background-color: $Col2;
-	font-family: $Font1;
-
-	.footer_wrapper {
-		display: flex;
-		flex-direction: column;
-	}
-	.bottom {
-		font-size: x-small;
-		align-self: baseline;
-	}
-}
-
 @media screen and (min-width: 700px) {
 /*SKRIV REGLER FÖR DESKTOP HÄR*/
 
@@ -211,10 +197,4 @@ body {
 	  font-size: 24px;
 	  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset;
 	}
-
-	.footer {
-		.footer_wrapper {
-			flex-direction: row;
-		}
-		}
   }

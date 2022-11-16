@@ -16,6 +16,8 @@ section #persons {
   border-top: 0.2rem solid black;
   border-bottom: 0.2rem solid black;
   border-radius: 1rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
 }
 section #persons figure {
@@ -150,4 +152,4 @@ footer {
   #qna-btn {
     pointer-events: none;
   }
-}
+}/*# sourceMappingURL=gtrbygrcntrm.css.map */
