@@ -1,23 +1,25 @@
+@import "../../styling/style.scss";
+
 *{
     padding: 0;
     margin: 0;
     background-origin: border-box;
-    font-family: monospace;
 }
 body{
-    background-color: lightgray;
+    background-color: $Col4;
 }
 nav{
-    background-color: orange;
+    background-color: $Col1;
     height: 10vh;
     max-width: 100%;
     text-align: center;
     p{
         padding: 1rem;
+        font-family: Economica;
     }
 }
 .omOss{
-    background-color: lightgrey;
+    background-color: $Col4;
     .aboutContainer{
         display: grid;
         grid-template-columns: 1fr;
@@ -27,12 +29,14 @@ nav{
                     text-align: center;
                     font-size: 3em;
                     font-weight: bold;
-                    background-color: black;
-                    color: white;
+                    font-family: Economica;
+                    background-color: $Col2;
+                    color: $Col4;
                     .headerOss{
                         font-size: 2em;
                         font-weight: bolder;
-                        color: orange;
+                        font-family: Economica;
+                        color: $Col1;
                     }
                 }
                 .intro{
@@ -42,6 +46,7 @@ nav{
                     p{
                         font-size: 1.2em;
                         text-align: center;
+                        font-family: $Font1;
                         .welcome{
                             font-size: 1.5em;
                             font-weight: bold;
@@ -63,38 +68,41 @@ nav{
                     padding: 1rem;
                     text-align: center;
                     font-size: 2em;
+                    font-family: Economica;
+                    color: $Col1;
                 }
                 p{
-                    font-size: 1em;
+                    font-size: 1.3em;
                     padding-top: 1rem;
                     padding-bottom: 1rem;
+                    font-family: $Font1;
                     .bold{
                         font-weight: bolder;
                     }
                     .numberVisit{
                         font-size: 1.4em;
                         font-weight: bolder;
-                        background-color: black;
-                        color: white;
+                        background-color: $Col2;
+                        color: $Col4;
                     }
                     .slogan{
                         font-size: 1.2em;
-                        background-color: white;
+                        background-color: $Col4;
                     }
                     .visit{
                         font-size: 1.8em;
                         font-weight: bold;
                         text-align: center;
-                        background-color: white;
+                        background-color: $Col4;
                         .numberVisit{
                             font-size: 1.4em;
                             font-weight: bolder;
-                            background-color: black;
-                            color: white;
+                            background-color: $Col2;
+                            color: $Col4;
                         }
                     }
                     .slogan{
-                        background-color: white;
+                        background-color: $Col4;
                         p{
                         font-size: 1.2em;
                         }
@@ -105,16 +113,24 @@ nav{
                 h3{
                     text-align: center;
                     font-size: 1.5em;
+                    font-family: Economica;
                     margin-top: 1rem;
                     margin-bottom: 1rem;
-                    background-color: white;
+                    background-color: $Col4;
+                    color: $Col1;
                 }
                 h2{
                     font-size: 2em;
+                    font-family: Economica;
+                    color: $Col1;
                     text-align: center;
                     margin-top: 1rem;
                     margin-bottom: 1rem;
-                    background-color: white;
+                    background-color: $Col4;
+                }
+                p{
+                    font-size: 1.3em;
+                    font-family: $Font1;
                 }
             }
         }
@@ -125,15 +141,24 @@ nav{
             margin-top: 2rem;
             h2{
                 font-size: 2em;
+                font-family: Economica;
+                color: $Col1;
+                background-color: $Col4;
                 text-align: center;
                 margin-top: .5rem;
                 margin-bottom: 1rem;
             }
             h3{
                 font-size: 2em;
+                font-family: Economica;
+                color: $Col1;
                 text-align: center;
                 margin-top: 1rem;
                 padding: 1rem;
+            }
+            p{
+                font-family: $Font1;
+                font-size: 1.3em;
             }
             .aboutPic{
                 background-color: white;
@@ -146,14 +171,116 @@ nav{
         }
     }
 }
-footer{
-    height: 10vh;
-    margin-top: 2rem;
-    background-color: black;
-    color: white;
-    text-align: center;
-    p{
-        padding: 1rem;
+//Footer
+.footer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 2em;
+    row-gap: 2em;
+    background-color: $Col2;
+    padding: 2em;
+    
+    .footer_addr {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        font-family: Font1;
+        color: $Col4;
+    
+        address {
+            font-style: normal;
+            font-family: $Font1;
+            font-size: small;
+        }
+    
+        .footer_logo {
+            font-family: Economica;
+            color: $Col1;
+            margin-bottom: 0.5em;
+        }
+    }
+    
+    .footer_btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 36px;
+      max-width: max-content;
+      background-color: $Col4;
+      color: $Col3;
+      border-radius: 100px;
+      line-height: 0;
+      margin: 0.6em 0;
+      font-size: 1rem;
+      padding: 0 1.3em;
+      text-decoration: none;
+      font-family: $Font1;
+      margin-top: 1em;
+    
+      &:hover {
+        color: $Col4;
+      }
+    }
+    
+    .footer_list1, .footer_list2, .footer_list3 {
+        h2 {
+            font-family: Economica;
+            color: $Col4;
+        }
+    
+        li {
+            list-style: none;
+            line-height: 2em;
+            font-family: $Font1;
+        }
+    
+        a {
+            text-decoration: none;
+            color: $Col4;
+    
+            &:hover {
+                color: $Col1;
+            }
+        }
+    }    
+    .footer_list1 {
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+
+    .footer_list2 {
+
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+
+    .footer_list3 {
+
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+
+    .bottom {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        font-size: x-small;
+        color: $Col4;
+    }
+}  
+@media screen and (min-width: 768px){
+    .footer {
+        display: grid;
+        .footer_addr {
+            grid-column: 1;
+        }
+        .footer_list1 {
+            grid-column: 2;
+        }
+        .footer_list2 {
+            grid-column: 3;
+        }
+        .footer_list3 {
+            grid-column: 4;
+        }
     }
 }
 @media screen and (min-width: 768px) {
@@ -168,13 +295,13 @@ footer{
                     text-align: center;
                     font-size: 4.5em;
                     font-weight: bold;
-                    background-color: black;
-                    color: white;
+                    background-color: $Col2;
+                    color: $Col4;
                     margin-top: 1rem;
                     .headerOss{
                         font-size: 2em;
                         font-weight: bolder;
-                        color: orange;
+                        color: $Col1;
                     }
                 }
                 .textCol1Mobile{
@@ -191,8 +318,8 @@ footer{
                     font-size: 2em;
                     text-align: center;
                     margin-top: 1rem;
-                    background-color: black;
-                    color: white;
+                    background-color: $Col4;
+                    color: $Col1;
                     padding: 1rem;
                 }
                 .textCol2Fullscreen{
@@ -205,7 +332,7 @@ footer{
                     }
                     h2{
                         font-size: 2em;
-                        background-color: white;
+                        background-color: $Col4;
                     }
                 }
                 .aboutPic{
@@ -232,19 +359,19 @@ footer{
                     text-align: center;
                     font-size: 6em;
                     font-weight: bold;
-                    background-color: black;
-                    color: white;
+                    background-color: $Col2;
+                    color: $Col4;
                     margin-top: 1rem;
                     margin-bottom: 1rem;
                     padding-bottom: 2rem;
                     .headerOss{
                         font-size: 2em;
                         font-weight: bolder;
-                        color: orange;
+                        color: $Col1;
                     }
                 }
                 .intro{
-                    background-color: white;
+                    background-color: $Col4;
                     margin-top: 1rem;
                     margin-bottom: 2rem;  
                     p{
@@ -257,8 +384,8 @@ footer{
                         .introJam{
                             font-size: 2em;
                             font-weight: bolder;
-                            background-color: black;
-                            color: white;
+                            background-color: $Col2;
+                            color: $Col4;
                         }
                         .instrument{
                             font-size: 1.5em;
@@ -282,19 +409,19 @@ footer{
                     text-align: center;
                     font-size: 8em;
                     font-weight: bold;
-                    background-color: black;
-                    color: white;
+                    background-color: $Col2;
+                    color: $Col4;
                     margin-top: 1rem;
                     margin-bottom: 1rem;
                     padding-bottom: 2rem;
                     .headerOss{
                         font-size: 2em;
                         font-weight: bolder;
-                        color: orange;
+                        color: $Col1;
                     }
                 }
                 .intro{
-                    background-color: white;
+                    background-color: $Col4;
                     margin-top: 1rem;
                     margin-bottom: 2rem;  
                     p{
@@ -307,8 +434,8 @@ footer{
                         .introJam{
                             font-size: 2em;
                             font-weight: bolder;
-                            background-color: black;
-                            color: white;
+                            background-color: $Col2;
+                            color: $Col4;
                         }
                         .instrument{
                             font-size: 1.5em;
