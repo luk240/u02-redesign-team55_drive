@@ -4,13 +4,6 @@ $Col3: #4b4b4b;
 $Col4: #eaeaea;  
 $Font1: Arial, Helvetica, sans-serif;
 
-@import "./test_hero";
-@import "./highlights";
-@import "./butiker";
-@import "./fungerar";
-@import "./gitarrer";
-@import "./om";
-@import "./kontakt";
 @import "./footer";
 
 * {
@@ -22,9 +15,8 @@ $Font1: Arial, Helvetica, sans-serif;
 body {
 	background: $Col4; 
 }
-
 /*===================
-3. Navigation
+ Navigation
 ===================*/
 .header {
 	position: relative;
@@ -160,14 +152,6 @@ body {
 	right: 0;
 	box-shadow: -20px 0 40px rgba(0, 0, 0, 0.3);
   }
-/*===================
-4. Footer
-===================*/
-
-@media screen and (min-width: 700px) {
-/*SKRIV REGLER FÖR DESKTOP HÄR*/
-
-}
 
 @media screen and (max-width: 1915px) {
 	.hamburger,
@@ -198,3 +182,185 @@ body {
 	  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset;
 	}
   }
+/*===================
+ Hero
+===================*/
+.hero {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../pictures/aliane-schwartzhaupt-2Y2NvdlSTls-unsplash.jpg);
+    height: 80vh;
+    align-self: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    align-items: center;
+    justify-content: center;
+
+    .text {
+      font-family: 'Economica', sans-serif; 
+      font-size: 2rem;
+      text-align: center;
+      color: $Col1; 
+  }
+}
+/*===================
+ Slider
+===================*/
+.studioSlider{
+    padding-inline: 1rem;
+    margin-bottom: 2rem;
+    font-family: $Font1;
+    .sliderHeader{
+        text-align: center;
+        font-size: 1.5em;
+        font-family: Economica;
+        color: $Col1;
+        margin-bottom: 2rem;
+    }
+}
+.sliderContainer{
+    display: grid;
+    gap: 1rem;
+    grid-auto-flow: column;
+    grid-auto-columns: 90%;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+}
+.item{
+    display: grid;
+    gap: 1rem;
+    grid-template-rows: min-content;
+    background: $Col3;
+    border-radius: 10px;
+    box-shadow: .5rem;
+    img{
+        padding: .5rem;
+        inline-size: 100%;
+        aspect-ratio: 16/9;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    p{
+        margin: .5rem;
+        font-size: 1.2em;
+        color: $Col4;
+        font-weight: bold;
+        font-family: $Font1;
+    }
+    button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 36px;
+        max-width: max-content;
+        background-color: $Col1;
+        color: $Col3;
+        border-radius: 100px;
+        line-height: 0;
+        margin: 0.6rem 0;
+        margin-left: .6rem;
+        font-size: 1rem;
+        padding: 0 1.3em;
+        text-decoration: none;
+        font-family: $Font1;
+        margin-top: 1em;
+        &:hover{
+            background: black;
+            color: $Col4;
+            transform: scale(1.1);
+            transition: .5s;
+            cursor: pointer;
+        }
+    }
+}
+.snaps-inline{
+    scroll-snap-type: inline mandatory;
+    scroll-padding-inline: 1rem;
+    *{
+        scroll-snap-align: start;
+    }
+}
+::-webkit-scrollbar{
+    height: 5px;
+    border-radius: 10px;
+    background: $Col4;
+}
+::-webkit-scrollbar-track{
+    background: $Col4;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background: black;
+    border-radius: 10px;
+    &:hover{
+        background: lightgray;
+        transform: scale(1.1);
+        transition: .5s;
+    }
+}
+@media screen and (min-width: 768px) {
+    .sliderContainer{
+        display: grid;
+        gap: 1rem;
+        grid-auto-flow: column;
+        grid-auto-columns: 30%;
+        overflow-x: auto;
+        overscroll-behavior-inline: contain;
+    }
+}
+/*===================
+ Grid categories
+===================*/
+.grid-container {
+	display: grid;
+	column-gap: 5%;
+	row-gap: 1rem;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto;
+	border: 3px solid black;
+	padding: 1rem 1rem;
+}
+.grid-item > div {
+	position: relative;
+	border: solid brown calc(0.6vmin);
+	border-radius: 1em;
+	max-width: 300px;
+	margin: 20px auto;
+}
+.grid-item div > h2 {
+	font-size: calc(10px + 0.5vw);
+	position: absolute;
+	top: -45px; /*fix zoom-out*/
+}
+.grid-img {
+	width: 100%;
+	height: 230px;
+	object-fit: scale-down;
+	transition: 0.5s ease;
+}
+.grid-img-text {
+	position: absolute;
+	opacity: 0;
+	top: 50%;
+	left: 50%;
+	transition: 0.2s ease;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	background-color: rgba(255,130,100,0.5);
+	color: white;
+	font-size: 16px;
+	padding: 16px 0px;
+	pointer-events: none;
+	width: 100%;
+}
+.grid-item:hover h2 { text-decoration: underline; }
+.grid-item div:hover img { filter: blur(4px); }
+.grid-item div:hover .grid-img-text { opacity: 1; }
+/* ======== RESPONSIVE ======== */
+@media screen and (min-width: 600px) {
+	.grid-container {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}
