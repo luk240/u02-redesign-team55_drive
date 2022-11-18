@@ -1,0 +1,224 @@
+@import "../../styling/style.scss";
+
+$Font1: Arial, Helvetica, sans-serif;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: $Col4;
+}
+//Nav
+nav{
+    height: 10vh;
+    width: 100%;
+    background-color: orange;
+    color: black;
+    padding-top: .5rem;
+    margin-bottom: 1rem;
+    h1{
+        text-align: center;
+        font-family: Economica;
+    }
+//Studio hero
+}
+.studioHero{
+    display: grid;
+    grid-template-columns: 1fr;
+    .studioHeader{
+        h1{
+            font-family: Economica;
+            font-size: 2em;
+            text-align: center;
+            color: $Col1;
+        }
+    }
+    .studioArt{
+        img{
+            width: 100%;
+            margin: auto;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+    }
+}
+//Slider
+}
+.studioSlider{
+    padding-inline: 1rem;
+    margin-bottom: 2rem;
+    font-family: $Font1;
+    .sliderHeader{
+        text-align: center;
+        font-size: 1.5em;
+        font-family: Economica;
+        color: $Col1;
+        margin-bottom: 2rem;
+    }
+}
+.sliderContainer{
+    display: grid;
+    gap: 1rem;
+    grid-auto-flow: column;
+    grid-auto-columns: 90%;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+}
+.item{
+    display: grid;
+    gap: 1rem;
+    grid-template-rows: min-content;
+    background: $Col3;
+    border-radius: 10px;
+    box-shadow: .5rem;
+    img{
+        padding: .5rem;
+        inline-size: 100%;
+        aspect-ratio: 16/9;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    p{
+        margin: .5rem;
+        font-size: 1.2em;
+        color: $Col4;
+        font-weight: bold;
+        font-family: $Font1;
+    }
+    button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 36px;
+        max-width: max-content;
+        background-color: $Col1;
+        color: $Col3;
+        border-radius: 100px;
+        line-height: 0;
+        margin: 0.6rem 0;
+        margin-left: .6rem;
+        font-size: 1rem;
+        padding: 0 1.3em;
+        text-decoration: none;
+        font-family: $Font1;
+        margin-top: 1em;
+        &:hover{
+            background: black;
+            color: $Col4;
+            transform: scale(1.1);
+            transition: .5s;
+            cursor: pointer;
+        }
+    }
+}
+.snaps-inline{
+    scroll-snap-type: inline mandatory;
+    scroll-padding-inline: 1rem;
+    *{
+        scroll-snap-align: start;
+    }
+}
+::-webkit-scrollbar{
+    height: 5px;
+    border-radius: 10px;
+    background: $Col4;
+}
+::-webkit-scrollbar-track{
+    background: $Col4;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background: black;
+    border-radius: 10px;
+    &:hover{
+        background: lightgray;
+        transform: scale(1.1);
+        transition: .5s;
+    }
+}
+//Kategorier
+.kategorierHeader{
+    margin-bottom: 2rem;
+    text-align: center;
+    font-family: Economica;
+    font-size: 1.2em;
+    color: $Col1;
+}
+.gridContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    .gridCol1{
+        display: grid;
+        margin: auto;
+        font-family: $Font1;
+        color: $Col4;
+        .gridItem{
+            background-color: $Col3;
+            min-height: 20vh;
+            max-height: 50vh;
+            width: 45vw;
+            max-width: 340px;
+            margin: .3rem;
+            font-size: .6em;
+            img{
+                width: 100%;
+                max-width: 340px;
+                aspect-ratio: 16/9;
+                object-fit: cover;
+                padding: .2rem;
+            }
+            h2{
+                margin: .5rem;
+                text-align: center;
+            }
+        }
+    }
+    .gridCol2{
+        display: grid;
+        margin: auto;
+        font-family: $Font1;
+        color: $Col4;
+        .gridItem{
+            background-color: $Col3;
+            min-height: 20vh;
+            max-height: 50vh;
+            width: 45vw;
+            max-width: 340px;
+            margin: .3rem;
+            font-size: .6em;
+            img{
+                width: 100%;
+                max-width: 340px;
+                aspect-ratio: 16/9;
+                object-fit: cover;
+                padding: .2rem;
+            }
+            h2{
+                margin: .5rem;
+                text-align: center;
+            }
+        }
+    }
+}
+@media screen and (min-width: 768px) {
+    .studioHeader{
+        font-size: 4em;
+    }
+    .studioSlider{
+        .sliderHeader{
+            font-size: 3em;
+        }
+    }
+    .kategorierHeader{
+        font-size: 3em;
+    }
+    .sliderContainer{
+        display: grid;
+        gap: 1rem;
+        grid-auto-flow: column;
+        grid-auto-columns: 30%;
+        overflow-x: auto;
+        overscroll-behavior-inline: contain;
+    }
+}

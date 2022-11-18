@@ -107,11 +107,12 @@ body {
 /*===================
  Navigation
 ===================*/
+
 .header {
   position: relative;
   max-width: 100%;
   display: flex;
-  top: -8px;
+  margin: 10px 0;
   justify-content: space-between;
   align-items: center;
   background: #e8edee; /* 4527a0 */
@@ -241,6 +242,38 @@ div.logo {
   box-shadow: -20px 0 40px rgba(0, 0, 0, 0.3);
 }
 
+/* ======== Breadcrumbs ======== */
+
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  background: #e8edee;
+  margin: 0 500px 0 0;
+}
+
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: #000;
+  content: "/\00a0";
+}
+
+ul.breadcrumb li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+
+ul.breadcrumb li a:hover{
+  color: #01447e;
+  text-decoration: underline;
+}
+
+/* ======== RESPONSIVE ======== */
+
 @media screen and (max-width: 1915px) {
   .hamburger,
   .toggle-menu {
@@ -258,7 +291,7 @@ div.logo {
     right: -400px;
     background: #e8ebee; /* 4527a0 */
     width: 300px;
-    height: 50%;
+    height: 40.6%;
   }
   .menu li {
     width: 127%;
@@ -267,6 +300,7 @@ div.logo {
   .menu li a:hover {
     padding: 15px;
     font-size: 24px;
+    text-align: center;
     box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset;
   }
 }
