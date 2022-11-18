@@ -1,0 +1,229 @@
+@import "./style.scss";
+
+h1, h2, h3 {
+    font-family: Economica;
+}
+h1 {
+    font-size: 2rem;
+}
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1em;
+}
+h3 {
+    margin-bottom: 1em;
+    font-size: 1.5rem;
+}
+
+.produkt {
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 2em;
+    display: grid;
+    grid-template-columns: 1fr;
+
+    .bild-rubrik-wrapper {
+        figure > img {
+            width: 100%;
+            margin-top: 1em;
+            margin-bottom: 1em;
+        }
+        #rating {
+            width: 15%;
+        }
+
+        .buy{
+            font-family: $Font1;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-top: 1em;
+            margin-bottom: 2em;
+            .footer_btn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 36px;
+                max-width: max-content;
+                background-color: $Col1;
+                color: $Col2;
+                border-radius: 100px;
+                line-height: 0;
+                margin: 0.6em 0;
+                font-size: 1rem;
+                padding: 0 1.3em;
+                text-decoration: none;
+                font-family: $Font1;
+                margin-top: 1em;
+              
+                &:hover {
+                  color: $Col4;
+                  cursor: pointer;
+                }
+              }
+        }
+    }
+    .info-wrapper {
+        ul {
+            margin-bottom: 2em;
+            font-family: $Font1;
+            list-style-type:circle;
+            line-height: 2em;
+        }
+        .linje {
+            visibility: none;
+        }
+    
+        p {
+            font-family: $Font1;
+            font-size: small;
+            margin-left: 2em;
+            margin-right: 2em;
+            margin-bottom: 1em;
+        }
+    }
+}
+
+.övrigt {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 2em;
+    .relaterat {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        h4 {
+            font-family: Economica;
+            font-size: medium;
+            text-align: center;
+        }
+        .bilder {
+            display: inline-flex;
+            flex-direction: row;
+            justify-content: space-between;
+            #rel_1, #rel_2, #rel_3 {
+                width: 50px;
+                height: 60px;
+                align-self: center;
+                margin-top: 1em;
+                margin-right: 0.2em;
+                margin-left: 0.2em;
+                }
+        }
+    }  
+    #liten_linje {
+        border-left: 2px solid $Col2;
+        height: 14vh;
+        position: absolute;
+        left: 60%;
+        margin-left: -3px;
+      }
+    .recensioner{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        h4 {
+            font-family: Economica;
+            font-size: medium;
+        }
+        figure {
+            display: flex;
+            justify-content: center;
+            #bubblor {
+                width: 50px;
+                height: 60px;
+                align-self: center;
+                margin-top: 1em;
+                }
+        }
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .produkt {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(4, auto);
+
+        .bild-rubrik-wrapper {
+            grid-column: 2 / 4;
+            figure > img {
+                width: 50%;
+                margin-top: 1em;
+                margin-bottom: 1em;
+            }
+        }
+    }
+
+    @media screen and (min-width: 900px) {
+        .produkt {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(4, auto);
+    
+            .bild-rubrik-wrapper {
+                grid-column: 2 / 4;
+                figure > img {
+                    width: 50%;
+                    margin-top: 1em;
+                    margin-bottom: 1em;
+                }
+            }
+        }
+    
+        .övrigt {
+            display: flex;
+            justify-content: space-around;
+            .relaterat {
+                h4 {
+                    font-size:large;
+                    text-align: center;
+                    margin-left: 5em;
+                }
+            .bilder {
+                display: inline-flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin-left: 5em;
+                #rel_1, #rel_2, #rel_3 {
+                    width: 150px;
+                    height: 160px;
+                    align-self: center;
+                    margin-top: 1em;
+                    margin-right: 0.5em;
+                    margin-left: 0.5em;
+                    }
+            }
+        }
+        .recensioner {
+            h4 {
+                font-size:large;
+            }
+            figure {
+                display: flex;
+                justify-content: center;
+                #bubblor {
+                    width: 100px;
+                    height: 160px;
+                    align-self: center;
+                    margin-top: 1em;
+                    margin-right: 18em;
+                    }
+            }
+        }
+    }
+        .linje {
+            border-left: 3px solid $Col2;
+            height: 90vh;
+            position: absolute;
+            left: 50%;
+            margin-left: -3px;
+          }
+        #liten_linje {
+            display: none;
+        }
+    }
+    
+}

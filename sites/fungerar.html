@@ -4,15 +4,19 @@
 	<title>Jam</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="../styling/fungerar.css">
+	<link rel="stylesheet" type="text/css" href="../styling/style.scss">
 </head>
 
 <body>
 
-<header class="header">
+<nav class="header">
 	<div class="logo">
-		<a href="index.html"><img src="../pictures/jam.png" alt="Logo"></a>
+		<a href="../index.html"><img src="../pictures/jam.png" alt="Logo"></a>
 	</div>
+    <ul class="breadcrumb">
+      <li><a href="../index.html">Start</a></li>
+      <li>Så fungerar det</li>
+    </ul>
 	<div class="navigation">
 		<input type="checkbox" class="toggle-menu">
 		<div class="hamburger"></div>
@@ -20,18 +24,131 @@
 			<li><a href="../index.html" class="">Start</a></li>
 			<li><a href="./butiker.html" class="">Butiker</a></li>
 			<li><a href="./fungerar.html" class="active">Så fungerar det</a></li>
-			<li><a href="./gitarr.html" class="">Gitarrbyggarcentrum</a></li>
+			<li><a href="./gtrbygrcntrm/gtrbygrcntrm.html" class="">Gitarrbyggarcentrum</a></li>
 			<li><a href="./om.html" class="">Om oss</a></li>
 			<li><a href="./kontakt.html" class="">Kontakta Jam</a></li>
 		</ul>
 	</div>
-</header>
+</nav>
 
-<section class="footer">
-	<footer>
-		<p>Basic Footer &copy;</p>
-	</footer>
+<section class="content">
+	<h2>Så funkar det</h2>
+
+	<h3>Ny sökfunktion</h3>
+
+	<p>När man nu börjar skriva in det man söker på kommer det automatiskt ge resultat i form av tillverkare och produkter.</p>
+
+	<h3>Så funkar det - Prova!</h3>
+
+	<p>Börja med att skriva t ex Fender, nu dyker det upp en lista på 20 relaterade Fender-produkter i bokstavsordning i JAMs sortiment.</p>
+
+	<p>I menyn kan du då välja en specifik produkt eller bara söka på Fender. I det gråa fältet under huvudrubrikerna kan du nu filtrera resulaten i respektive underkategori genom att klicka<br>
+	   på nyckelorden som visas i olika storlekar beroende på träffantal.</p>
+
+	<p>Är du intresserad av t ex gitarrförstärkare från Fender klickar du på Gitarrförstärkare i det gråa fältet - och får en lista på alla gitarrförstärkare från Fender.</p>
+
+	<h3>Välj rutnät, lista etc</h3>
+
+	<p>Kolla in möjligheten att ställa hur dina sökningar presenteras rent visuellt, som t ex rutnät, lista osv.</p>
+
+	<p>Här kan du nämligen via "visa resultat som" välja två olika layouter;</p>
+
+	<p>* "Rutnät" med produkterna sida vid sida i rutnät och med enbart produktnamn och pris.</p>
+
+	<p>* "Lista" med mindre bilder, enkel om du vill ha en snabb översikt i listform.</p>
+
+	<h3>Sortera efter pris, bokstav, nytt etc</h3>
+
+	<p>Via "Sortera efter" kan du nu även välja hur ditt sökresultat sorteras.</p>
+
+	<p>Bokstavsordning, nyast inkomna, pris eller relevans (som helt enkelt prioriterar efter hur många gånger ditt sökord nämns på en artikel)..</p>
+
+	<p>Hur används dessa rent praktiskt för mer avancerade sökningar? Du kanske är intesserad av att få en lista på alla Fender-gitarrer? Sök på "Fender beg" i sökrutan - du kan nu klicka på<br>
+	   "Gitarr el" i den gråa rutan under sökrutan - du har nu en lista på alla begagnade Fender-elgitarrer i vårt sortiment.</p>
+
+	<p>Vilka är billigast? Välj "pris (lågt->högt)" i "Sortera efter"-menyn till höger.</p>
+
+	<p>Vad finns det för begagnade syntar på JAM Göteborg? Sök på "Göteborg beg" i sökrutan och välj "Synth/Analog/Vintage" i den gråa rutan. Lite avancerat? Ja - men vi tycker att den här<br>
+	   metoden medför så många olika valmöjligheter och egentligen inte alls tar så lång tid att bemästra.</p>
+	
+	<p>MVH Jam</p>
 </section>
+
+	<footer class="footer">
+        <div class="footer_addr">
+          <h1 class="footer_logo">Jam - bring music to life</h1>
+
+          <address>
+            Roslagsgatan 19, 113 55, Stockholm<br>
+
+            <form action="mailto:order@jam.se">
+              <button type="submit" class="footer_btn">Email us</button>
+           </form>
+          </address>
+        </div>
+
+        <div class="footer_list1">
+        <ul>
+            <li>
+            <h2 class="footer_section_title">Jam</h2>
+            </li>
+              <li>
+                <a href="#">Om oss</a>
+              </li>
+
+              <li>
+                <a href="#">Gitarrbyggarcentrum</a>
+              </li>
+
+              <li>
+                <a href="#">Bra att veta</a>
+              </li>
+        </ul>
+        </div>
+
+        <div class="footer_list2">
+        <ul>
+            <li>
+            <h2 class="footer_section_title">Kund</h2>
+            </li>
+              <li>
+                <a href="#">Hyra ljud/ljus</a>
+              </li>
+
+              <li>
+                <a href="#">Klarna</a>
+              </li>
+
+              <li>
+                <a href="#">Bli medlem</a>
+              </li>
+            </ul>
+        </div>
+
+        <div class="footer_list3">
+            <ul>
+              <li>
+                <h2 class="footer_section_title">Socialt</h2>
+              </li>
+
+              <li>
+                <a href="#">Följ oss</a>
+              </li>
+
+              <li>
+                <a href="#">Partners</a>
+              </li>
+
+              <li>
+                <a href="#">Kundrecensioner</a>
+              </li>
+            </ul>
+        </div>
+
+        <div class="bottom">
+		  <p>Copyright &copy; 1998-2022 jam.se (publ). Headquarters: Stockholm, Sweden. All rights reserved. Roslagsgatan 19, 11355 Stockholm. </p>
+		</div>
+    </footer>
 
 </body>
 </html>
