@@ -242,6 +242,13 @@ ul.breadcrumb li a:hover{
 /*===================
  Slider
 ===================*/
+.highlightsHeader{
+    font-family: Economica;
+    font-size: 3em;
+    text-align: center;
+    color: $Col1;
+    margin: 2rem;
+}
 .studioSlider{
     padding-inline: 1rem;
     margin-bottom: 2rem;
@@ -275,6 +282,9 @@ ul.breadcrumb li a:hover{
         aspect-ratio: 16/9;
         object-fit: cover;
         border-radius: 10px;
+    }
+    a{
+      cursor: pointer;
     }
     p{
         margin: .5rem;
@@ -347,6 +357,13 @@ ul.breadcrumb li a:hover{
 /*===================
  Grid categories
 ===================*/
+.kategorierHeader{
+  font-family: Economica;
+  font-size: 3em;
+  text-align: center;
+  color: $Col1;
+  margin: 2rem;
+}
 .grid-container {
 	display: grid;
 	column-gap: 5%;
