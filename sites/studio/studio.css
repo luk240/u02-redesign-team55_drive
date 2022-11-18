@@ -7,6 +7,7 @@
   row-gap: 2em;
   background-color: #2c2c2c;
   padding: 2em;
+  margin-top: 5vh;
 }
 .footer .footer_addr {
   grid-column-start: 1;
@@ -333,6 +334,8 @@ ul.breadcrumb li a:hover {
   font-family: Economica;
   font-size: 3em;
   text-align: center;
+  color: #fcc700;
+  margin: 2rem;
 }
 
 .studioSlider {
@@ -373,6 +376,9 @@ ul.breadcrumb li a:hover {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px;
+}
+.item a {
+  cursor: pointer;
 }
 .item p {
   margin: 0.5rem;
@@ -453,6 +459,14 @@ ul.breadcrumb li a:hover {
 /*===================
  Grid categories
 ===================*/
+.kategorierHeader {
+  font-family: Economica;
+  font-size: 3em;
+  text-align: center;
+  color: #fcc700;
+  margin: 2rem;
+}
+
 .grid-container {
   display: grid;
   -moz-column-gap: 5%;
@@ -627,7 +641,14 @@ nav h1 {
   border-radius: 10px;
   box-shadow: 0.5rem;
 }
-.item img {
+.item:hover {
+  background-color: lightgray;
+}
+.item:hover p {
+  color: black;
+}
+
+img {
   padding: 0.5rem;
   inline-size: 100%;
   aspect-ratio: 16/9;
@@ -635,14 +656,32 @@ nav h1 {
      object-fit: cover;
   border-radius: 10px;
 }
-.item p {
+
+a {
+  cursor: pointer;
+}
+
+.soon {
+  text-align: center;
+  font-size: 1.5em;
+  color: rgb(255, 103, 76);
+}
+
+.kampanj {
+  text-align: center;
+  font-size: 1.5em;
+  color: #fcc700;
+}
+
+p {
   margin: 0.5rem;
   font-size: 1.2em;
   color: #eaeaea;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
 }
-.item button {
+
+button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -662,7 +701,7 @@ nav h1 {
   font-family: Arial, Helvetica, sans-serif;
   margin-top: 1em;
 }
-.item button:hover {
+button:hover {
   background: black;
   color: #eaeaea;
   transform: scale(1.1);
@@ -728,6 +767,11 @@ nav h1 {
   max-width: 340px;
   margin: 0.3rem;
   font-size: 0.6em;
+  border-radius: 10px;
+}
+.gridContainer .gridCol1 .gridItem:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
 }
 .gridContainer .gridCol1 .gridItem img {
   width: 100%;
@@ -755,6 +799,11 @@ nav h1 {
   max-width: 340px;
   margin: 0.3rem;
   font-size: 0.6em;
+  border-radius: 10px;
+}
+.gridContainer .gridCol2 .gridItem:hover {
+  transform: scale(1.05);
+  transition: 0.5s;
 }
 .gridContainer .gridCol2 .gridItem img {
   width: 100%;
