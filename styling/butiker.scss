@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     .rubrik {
-        font-family: 'Economica', sans-serif; 
+        font-family: Economica; 
         font-size: 2rem;
         text-align: center;
         color: $Col1; 
@@ -26,6 +26,7 @@
     justify-content: center;
     margin-top: 2em;
     margin-bottom: 2em;
+    padding-top: 1em;
 
     .bild1, .bild2 {
         margin-top: 2em;
@@ -37,7 +38,6 @@
 
     .address {
         height: 25vh;
-        background-color: $Col4;
         margin-top: 1em;
         margin-bottom: 1em;
         margin-left: 1em;
