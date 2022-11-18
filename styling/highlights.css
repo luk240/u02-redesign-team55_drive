@@ -329,12 +329,15 @@ ul.breadcrumb li a:hover {
 /*===================
  Slider
 ===================*/
+<<<<<<< HEAD
 .highlightsHeader {
   font-family: Economica;
   font-size: 3em;
   text-align: center;
 }
 
+=======
+>>>>>>> refs/remotes/origin/main
 .studioSlider {
   padding-inline: 1rem;
   margin-bottom: 2rem;

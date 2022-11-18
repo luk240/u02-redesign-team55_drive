@@ -329,12 +329,15 @@ ul.breadcrumb li a:hover {
 /*===================
  Slider
 ===================*/
+<<<<<<< HEAD
 .highlightsHeader {
   font-family: Economica;
   font-size: 3em;
   text-align: center;
 }
 
+=======
+>>>>>>> refs/remotes/origin/main
 .studioSlider {
   padding-inline: 1rem;
   margin-bottom: 2rem;
@@ -561,7 +564,7 @@ input[type=submit]:hover {
   flex-direction: column;
 }
 .butiker .rubrik {
-  font-family: "Economica", sans-serif;
+  font-family: Economica;
   font-size: 2rem;
   text-align: center;
   color: #fcc700;
@@ -581,6 +584,7 @@ input[type=submit]:hover {
   justify-content: center;
   margin-top: 2em;
   margin-bottom: 2em;
+  padding-top: 1em;
 }
 .butik1 .bild1, .butik1 .bild2, .butik2 .bild1, .butik2 .bild2 {
   margin-top: 2em;
@@ -590,7 +594,6 @@ input[type=submit]:hover {
 }
 .butik1 .address, .butik2 .address {
   height: 25vh;
-  background-color: #eaeaea;
   margin-top: 1em;
   margin-bottom: 1em;
   margin-left: 1em;
