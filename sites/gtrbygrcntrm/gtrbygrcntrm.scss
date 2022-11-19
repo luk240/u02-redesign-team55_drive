@@ -1,25 +1,33 @@
+@import "../../styling/style.scss";
+
 body {
 	margin: 0;
+	background-color: $Col4;
+	h1,h2 {
+		color: $Col1;
+		font-size: 2.5rem;
+		font-family: Economica;
+	}
+	p {
+		font-family: $Font1; 
+	}
 }
 main {margin: 0 auto}
 section {
 	/*max-width: 800px;*/
-	> h2 {
+	> h1 {
 		text-align: center;
 	}
 	#persons {
-		border-top: 0.2rem solid black;
-		border-bottom: 0.2rem solid black;
-		border-radius: 1rem;
 		height: fit-content;
 		figure { text-align: center; 
 			img {
 			width: 100%; 
 			max-width: 800px;
+			border-radius: 1rem;
 		}	}
-		h2 {margin: 1rem;}
 		div.person {
-			background-color: lightgrey;
+			background-color: white;
 			padding: 0.5rem;
 			border-radius: 0.5rem;
 			margin: 1rem;
@@ -32,24 +40,23 @@ label#qna-btn {
 	background: white;
 	color: black;
 	cursor: pointer;
-	background-color: orange;
-	border: solid 2px black;
+	background-color: $Col3;
 	border-radius: 0.5rem;
 	display: block;
-	box-shadow: 0 6px 10px 0 rgba(200,0,0,0.4), 0 6px 20px 0 rgba(0,0,0,0.4);
+	box-shadow: 0 6px 10px 0 rgba(255,170,0,0.4), 0 6px 20px 0 rgba(0,0,0,0.4);
 	::before {
 		position: absolute;
-		content: "Tryck!";
+		content: "↓";
 		left: 0;
 		text-indent: 1em;
-		font-size: 1rem;
+		font-size: 3rem;
 	}
 	::after {
 		position: absolute;
-		content: "Tryck!";
+		content: "↓";
 		right: 0;
 		margin-right: 1em;
-		font-size: 1rem;
+		font-size: 3rem;
 	}
 }
 #qna-btn + input#qna-show { display: none; }
@@ -65,11 +72,12 @@ aside {
 		border-radius: 1rem;
 		padding: 0.3rem;
 		margin: 0.5rem 0;
+		background-color: white;
 		em::before {
 			content: "F: ";
 			font-style: normal;
 			font-weight: bold;
-			color: orange;
+			color: $Col1;
 		}
 		em {
 			font-style: normal;
@@ -94,25 +102,13 @@ small {
 	text-align: center;
 	text-decoration: underline;
 }
-footer {
-	height: 10vh;
-	width: 100%;
-	color: white;
-	background-color: darkblue;
-	text-align: center;
-}
 @media screen and (min-width: 1000px) {
 	main {
 		display: flex;
 		justify-content: center;
 		margin: 0 1rem;
 		gap: 1rem;
-		section {
-			flex: 100%;
-			#persons {
-				border: 0.2rem solid black;
-			}
-		}
+		section { flex: 100%; }
 		aside {
 			flex: 50%;
 			label#qna-btn {
