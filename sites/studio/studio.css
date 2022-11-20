@@ -116,7 +116,7 @@ body {
   position: relative;
   max-width: 100%;
   display: flex;
-  margin: 10px 0;
+  top: -8px;
   justify-content: space-between;
   align-items: center;
   background: #e8edee; /* 4527a0 */
@@ -244,62 +244,6 @@ div.logo {
 .navigation input:checked ~ .menu {
   right: 0;
   box-shadow: -20px 0 40px rgba(0, 0, 0, 0.3);
-}
-
-/* ======== Dropdown ======== */
-.navigation .dropdown ul {
-  display: block;
-  border-radius: 10px;
-  position: absolute;
-  left: 1478px;
-  top: calc(100% + 30px);
-  margin: 0;
-  padding: 8px 0;
-  z-index: 999999;
-  opacity: 0;
-  visibility: hidden;
-  background: #e8edee;
-  box-shadow: 0px 0px 15px rgba(127, 137, 161, 0.25);
-  transition: 0.5s;
-}
-
-.navigation .dropdown ul li {
-  min-width: 200px;
-}
-
-.navigation .dropdown ul a {
-  padding: 4px 20px;
-  font-size: 16px;
-  text-transform: none;
-  font-weight: 500;
-  color: #000;
-}
-
-.navigation .dropdown ul a i {
-  font-size: 18px;
-}
-
-.navigation .dropdown ul a:hover, .navigation .dropdown ul .active:hover, .navigation .dropdown ul li:hover > a {
-  color: #fa4500;
-}
-
-.navigation .dropdown:hover > ul {
-  opacity: 1;
-  top: 100%;
-  visibility: visible;
-}
-
-.navigation .dropdown .dropdown ul {
-  top: 0;
-  left: calc(100% - 30px);
-  visibility: hidden;
-}
-
-.navigation .dropdown .dropdown:hover > ul {
-  opacity: 1;
-  top: 0;
-  left: 100%;
-  visibility: visible;
 }
 
 /* ======== Breadcrumbs ======== */
@@ -870,11 +814,11 @@ button:hover {
   .studioHeader {
     font-size: 4em;
   }
-  .studioSlider .sliderHeader h1 {
-    font-size: 4em;
+  .studioSlider .sliderHeader {
+    font-size: 3em;
   }
-  .kategorierHeader h1 {
-    font-size: 5em;
+  .kategorierHeader {
+    font-size: 3em;
   }
   .sliderContainer {
     display: grid;
@@ -989,10 +933,6 @@ button:hover {
   .gridDeskContainer .gridCol3 .gridItem h2 {
     margin: 0.5rem;
     text-align: center;
-  }
-  .gridDeskContainer .gridCol3 .gridItem a {
-    text-decoration: none;
-    color: #eaeaea;
   }
   .gridDeskContainer .gridCol4 {
     display: grid;
