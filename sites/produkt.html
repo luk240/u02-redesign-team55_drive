@@ -5,6 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="../styling/produkt.css">
+	<link rel="stylesheet" type="text/css" href="../styling/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Economica:wght@700&display=swap" 
@@ -12,6 +13,28 @@
 </head>
 
 <body>
+
+<nav>
+  <input type="checkbox" id="check">
+  <label for="check" class="checkbtn">
+    <i class="fa fa-bars"></i>
+  </label>
+  <label class="logo"><a href="../index.html">Jam</a></label>
+  <ul>
+    <li><a href="../index.html">Start</a></li>
+    <li><a class="active" href="./butiker.html">Butiker</a></li>
+    <li><a href="./fungerar.html">Fungerar</a></li>
+    <li><a href="./gtrbygrcntrm/gtrbygrcntrm.html">Gitarrbyggarcentrum</a></li>
+    <li class="dropdown"><a class="active" href="#">Kategorier <i class="fa fa-caret-down"></i></a>
+    	<ul>
+    		<li><a href="./studio/studio.html">Studiorummet</a></li>
+    	</ul>
+    </li>
+    <li><a href="./omOss/omOss.html">Om oss</a></li>
+    <li><a href="./kontakt.html">Kontakta Jam</a></li>
+  </ul>
+</nav>
+
 	<article class="produkt">
 	<section class="bild-rubrik-wrapper">
 		<div class="studioText">
@@ -81,5 +104,45 @@
 			</figure>
 		</div>
 	</aside>
+
+<footer class="footer">
+  		<div class="footer_addr">
+    	<h1 class="footer_logo">Jam - bring music to life</h1>
+        <address>
+          Roslagsgatan 19, 113 55, Stockholm<br>
+          <form action="mailto:order@jam.se">
+            <button type="submit" class="footer_btn">Email us</button>
+         </form>
+        </address>
+      </div>
+      <div class="footer_list1">
+      	<ul>
+          <li><h2 class="footer_section_title">Jam</h2></li>
+          <li><a href="#">Om oss</a></li>
+          <li><a href="#">Gitarrbyggarcentrum</a></li>
+          <li><a href="#">Bra att veta</a></li>
+      	</ul>
+      </div>
+      <div class="footer_list2">
+      	<ul>
+          <li><h2 class="footer_section_title">Kund</h2></li>
+          <li><a href="#">Hyra ljud/ljus</a></li>
+          <li><a href="#">Klarna</a></li>
+          <li><a href="#">Bli medlem</a></li>
+        </ul>
+      </div>
+      <div class="footer_list3">
+        <ul>
+          <li><h2 class="footer_section_title">Socialt</h2></li>
+          <li><a href="#">Följ oss</a></li>
+          <li><a href="#">Partners</a></li>
+          <li><a href="#">Kundrecensioner</a></li>
+        </ul>
+      </div>
+      <div class="bottom">
+	  <p>Copyright &copy; 1998-2022 jam.se (publ). Headquarters: Stockholm, Sweden. All rights reserved. Roslagsgatan 19, 11355 Stockholm. </p>
+	</div>
+</footer>
+
 </body>
 </html>
