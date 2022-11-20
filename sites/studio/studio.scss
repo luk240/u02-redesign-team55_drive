@@ -9,20 +9,6 @@ $Font1: Arial, Helvetica, sans-serif;
 body{
     background-color: $Col4;
 }
-//Nav
-// nav{
-//     height: 10vh;
-//     width: 100%;
-//     background-color: orange;
-//     color: black;
-//     padding-top: .5rem;
-//     margin-bottom: 1rem;
-//     h1{
-//         text-align: center;
-//         font-family: Economica;
-//     }
-// }
-
 //Studio Hero
 .studioHero{
     display: grid;
@@ -247,7 +233,7 @@ body{
     }
     .kategorierHeader{
         h1{
-            font-size: 2em;
+            font-size: 5em;
         }
     }
     .sliderContainer{
