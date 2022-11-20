@@ -116,7 +116,7 @@ body {
   position: relative;
   max-width: 100%;
   display: flex;
-  top: -8px;
+  margin: 10px 0;
   justify-content: space-between;
   align-items: center;
   background: #e8edee; /* 4527a0 */
@@ -244,6 +244,62 @@ div.logo {
 .navigation input:checked ~ .menu {
   right: 0;
   box-shadow: -20px 0 40px rgba(0, 0, 0, 0.3);
+}
+
+/* ======== Dropdown ======== */
+.navigation .dropdown ul {
+  display: block;
+  border-radius: 10px;
+  position: absolute;
+  left: 1478px;
+  top: calc(100% + 30px);
+  margin: 0;
+  padding: 8px 0;
+  z-index: 999999;
+  opacity: 0;
+  visibility: hidden;
+  background: #e8edee;
+  box-shadow: 0px 0px 15px rgba(127, 137, 161, 0.25);
+  transition: 0.5s;
+}
+
+.navigation .dropdown ul li {
+  min-width: 200px;
+}
+
+.navigation .dropdown ul a {
+  padding: 4px 20px;
+  font-size: 16px;
+  text-transform: none;
+  font-weight: 500;
+  color: #000;
+}
+
+.navigation .dropdown ul a i {
+  font-size: 18px;
+}
+
+.navigation .dropdown ul a:hover, .navigation .dropdown ul .active:hover, .navigation .dropdown ul li:hover > a {
+  color: #fa4500;
+}
+
+.navigation .dropdown:hover > ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+}
+
+.navigation .dropdown .dropdown ul {
+  top: 0;
+  left: calc(100% - 30px);
+  visibility: hidden;
+}
+
+.navigation .dropdown .dropdown:hover > ul {
+  opacity: 1;
+  top: 0;
+  left: 100%;
+  visibility: visible;
 }
 
 /* ======== Breadcrumbs ======== */
@@ -575,6 +631,10 @@ input[type=submit]:hover {
   padding: 0;
 }
 
+.gridDeskContainer {
+  display: none;
+}
+
 .kategorierHeader {
   margin-bottom: 2rem;
   text-align: center;
@@ -660,5 +720,143 @@ input[type=submit]:hover {
     grid-auto-columns: 30%;
     overflow-x: auto;
     overscroll-behavior-inline: contain;
+  }
+}
+@media screen and (min-width: 1430px) {
+  .gridContainer {
+    display: none;
+  }
+  .gridDeskContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+  }
+  .gridDeskContainer .gridCol1 {
+    display: grid;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #eaeaea;
+  }
+  .gridDeskContainer .gridCol1 .gridItem {
+    background-color: #4b4b4b;
+    min-height: 20vh;
+    max-height: 50vh;
+    width: 45vw;
+    max-width: 340px;
+    margin: 0.3rem;
+    font-size: 0.6em;
+    border-radius: 10px;
+  }
+  .gridDeskContainer .gridCol1 .gridItem:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+  }
+  .gridDeskContainer .gridCol1 .gridItem img {
+    width: 100%;
+    max-width: 340px;
+    aspect-ratio: 16/9;
+    -o-object-fit: cover;
+       object-fit: cover;
+    padding: 0.2rem;
+  }
+  .gridDeskContainer .gridCol1 .gridItem h2 {
+    margin: 0.5rem;
+    text-align: center;
+  }
+  .gridDeskContainer .gridCol2 {
+    display: grid;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #eaeaea;
+  }
+  .gridDeskContainer .gridCol2 .gridItem {
+    background-color: #4b4b4b;
+    min-height: 20vh;
+    max-height: 50vh;
+    width: 45vw;
+    max-width: 340px;
+    margin: 0.3rem;
+    font-size: 0.6em;
+    border-radius: 10px;
+  }
+  .gridDeskContainer .gridCol2 .gridItem:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+  }
+  .gridDeskContainer .gridCol2 .gridItem img {
+    width: 100%;
+    max-width: 340px;
+    aspect-ratio: 16/9;
+    -o-object-fit: cover;
+       object-fit: cover;
+    padding: 0.2rem;
+  }
+  .gridDeskContainer .gridCol2 .gridItem h2 {
+    margin: 0.5rem;
+    text-align: center;
+  }
+  .gridDeskContainer .gridCol3 {
+    display: grid;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #eaeaea;
+  }
+  .gridDeskContainer .gridCol3 .gridItem {
+    background-color: #4b4b4b;
+    min-height: 20vh;
+    max-height: 50vh;
+    width: 45vw;
+    max-width: 340px;
+    margin: 0.3rem;
+    font-size: 0.6em;
+    border-radius: 10px;
+  }
+  .gridDeskContainer .gridCol3 .gridItem:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+  }
+  .gridDeskContainer .gridCol3 .gridItem img {
+    width: 100%;
+    max-width: 340px;
+    aspect-ratio: 16/9;
+    -o-object-fit: cover;
+       object-fit: cover;
+    padding: 0.2rem;
+  }
+  .gridDeskContainer .gridCol3 .gridItem h2 {
+    margin: 0.5rem;
+    text-align: center;
+  }
+  .gridDeskContainer .gridCol4 {
+    display: grid;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #eaeaea;
+  }
+  .gridDeskContainer .gridCol4 .gridItem {
+    background-color: #4b4b4b;
+    min-height: 20vh;
+    max-height: 50vh;
+    width: 45vw;
+    max-width: 340px;
+    margin: 0.3rem;
+    font-size: 0.6em;
+    border-radius: 10px;
+  }
+  .gridDeskContainer .gridCol4 .gridItem:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+  }
+  .gridDeskContainer .gridCol4 .gridItem img {
+    width: 100%;
+    max-width: 340px;
+    aspect-ratio: 16/9;
+    -o-object-fit: cover;
+       object-fit: cover;
+    padding: 0.2rem;
+  }
+  .gridDeskContainer .gridCol4 .gridItem h2 {
+    margin: 0.5rem;
+    text-align: center;
   }
 }/*# sourceMappingURL=product-grid.css.map */
