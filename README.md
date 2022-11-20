@@ -10,6 +10,8 @@ Vi har fått i uppgift att göra en re-design av www.jam.se. För att ta oss an 
 
 Vi har skapat en Discord kanal där vi haft kontinuerlig kontakt under projektets gång.
 
+Vi har skapat ett separat arbetsrepo i Github som vi arbetat i. _Se länk nedan_.
+
 Vi har valt att spara all dokumentation i **OneNote**. Där finns dokumentation från våra möten och dokumentation från våra genomförda intervjuer. Där kan man även finna våra personas (kort) som vi använt för att ta fram user-stories.
 
 Vi har skapat ett gemensamt projekt i Figma där vi har våra skisser.
