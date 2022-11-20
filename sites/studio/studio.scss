@@ -10,19 +10,20 @@ body{
     background-color: $Col4;
 }
 //Nav
-nav{
-    height: 10vh;
-    width: 100%;
-    background-color: orange;
-    color: black;
-    padding-top: .5rem;
-    margin-bottom: 1rem;
-    h1{
-        text-align: center;
-        font-family: Economica;
-    }
-//Studio hero
-}
+// nav{
+//     height: 10vh;
+//     width: 100%;
+//     background-color: orange;
+//     color: black;
+//     padding-top: .5rem;
+//     margin-bottom: 1rem;
+//     h1{
+//         text-align: center;
+//         font-family: Economica;
+//     }
+// }
+
+//Studio Hero
 .studioHero{
     display: grid;
     grid-template-columns: 1fr;
@@ -155,6 +156,9 @@ nav{
         transition: .5s;
     }
 }
+.gridDeskContainer{
+    display: none;
+}
 //Kategorier
 .kategorierHeader{
     margin-bottom: 2rem;
@@ -249,5 +253,139 @@ nav{
         grid-auto-columns: 30%;
         overflow-x: auto;
         overscroll-behavior-inline: contain;
+    }
+}
+@media screen and (min-width: 1430px){
+    .gridContainer{
+        display: none;
+    }
+    .gridDeskContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+        .gridCol1{
+            display: grid;
+            margin: auto;
+            font-family: $Font1;
+            color: $Col4;
+            .gridItem{
+                background-color: $Col3;
+                min-height: 20vh;
+                max-height: 50vh;
+                width: 45vw;
+                max-width: 340px;
+                margin: .3rem;
+                font-size: .6em;
+                border-radius: 10px;
+                &:hover{
+                    transform: scale(1.05);
+                    transition: .5s;
+                }
+                img{
+                    width: 100%;
+                    max-width: 340px;
+                    aspect-ratio: 16/9;
+                    object-fit: cover;
+                    padding: .2rem;
+                }
+                h2{
+                    margin: .5rem;
+                    text-align: center;
+                }
+            }
+        }
+        .gridCol2{
+            display: grid;
+            margin: auto;
+            font-family: $Font1;
+            color: $Col4;
+            .gridItem{
+                background-color: $Col3;
+                min-height: 20vh;
+                max-height: 50vh;
+                width: 45vw;
+                max-width: 340px;
+                margin: .3rem;
+                font-size: .6em;
+                border-radius: 10px;
+                &:hover{
+                    transform: scale(1.05);
+                    transition: .5s;
+                }
+                img{
+                    width: 100%;
+                    max-width: 340px;
+                    aspect-ratio: 16/9;
+                    object-fit: cover;
+                    padding: .2rem;
+                }
+                h2{
+                    margin: .5rem;
+                    text-align: center;
+                }
+            }
+        }
+        .gridCol3{
+            display: grid;
+            margin: auto;
+            font-family: $Font1;
+            color: $Col4;
+            .gridItem{
+                background-color: $Col3;
+                min-height: 20vh;
+                max-height: 50vh;
+                width: 45vw;
+                max-width: 340px;
+                margin: .3rem;
+                font-size: .6em;
+                border-radius: 10px;
+                &:hover{
+                    transform: scale(1.05);
+                    transition: .5s;
+                }
+                img{
+                    width: 100%;
+                    max-width: 340px;
+                    aspect-ratio: 16/9;
+                    object-fit: cover;
+                    padding: .2rem;
+                }
+                h2{
+                    margin: .5rem;
+                    text-align: center;
+                }
+            }
+        }
+        .gridCol4{
+            display: grid;
+            margin: auto;
+            font-family: $Font1;
+            color: $Col4;
+            .gridItem{
+                background-color: $Col3;
+                min-height: 20vh;
+                max-height: 50vh;
+                width: 45vw;
+                max-width: 340px;
+                margin: .3rem;
+                font-size: .6em;
+                border-radius: 10px;
+                &:hover{
+                    transform: scale(1.05);
+                    transition: .5s;
+                }
+                img{
+                    width: 100%;
+                    max-width: 340px;
+                    aspect-ratio: 16/9;
+                    object-fit: cover;
+                    padding: .2rem;
+                }
+                h2{
+                    margin: .5rem;
+                    text-align: center;
+                }
+            }
+        }
     }
 }

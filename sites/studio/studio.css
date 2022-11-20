@@ -581,19 +581,6 @@ body {
   background-color: #eaeaea;
 }
 
-nav {
-  height: 10vh;
-  width: 100%;
-  background-color: orange;
-  color: black;
-  padding-top: 0.5rem;
-  margin-bottom: 1rem;
-}
-nav h1 {
-  text-align: center;
-  font-family: Economica;
-}
-
 .studioHero {
   display: grid;
   grid-template-columns: 1fr;
@@ -741,6 +728,10 @@ button:hover {
   transition: 0.5s;
 }
 
+.gridDeskContainer {
+  display: none;
+}
+
 .kategorierHeader {
   margin-bottom: 2rem;
   text-align: center;
@@ -836,5 +827,143 @@ button:hover {
     grid-auto-columns: 30%;
     overflow-x: auto;
     overscroll-behavior-inline: contain;
+  }
+}
+@media screen and (min-width: 1430px) {
+  .gridContainer {
+    display: none;
+  }
+  .gridDeskContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+  }
+  .gridDeskContainer .gridCol1 {
+    display: grid;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #eaeaea;
+  }
+  .gridDeskContainer .gridCol1 .gridItem {
+    background-color: #4b4b4b;
+    min-height: 20vh;
+    max-height: 50vh;
+    width: 45vw;
+    max-width: 340px;
+    margin: 0.3rem;
+    font-size: 0.6em;
+    border-radius: 10px;
+  }
+  .gridDeskContainer .gridCol1 .gridItem:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+  }
+  .gridDeskContainer .gridCol1 .gridItem img {
+    width: 100%;
+    max-width: 340px;
+    aspect-ratio: 16/9;
+    -o-object-fit: cover;
+       object-fit: cover;
+    padding: 0.2rem;
+  }
+  .gridDeskContainer .gridCol1 .gridItem h2 {
+    margin: 0.5rem;
+    text-align: center;
+  }
+  .gridDeskContainer .gridCol2 {
+    display: grid;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #eaeaea;
+  }
+  .gridDeskContainer .gridCol2 .gridItem {
+    background-color: #4b4b4b;
+    min-height: 20vh;
+    max-height: 50vh;
+    width: 45vw;
+    max-width: 340px;
+    margin: 0.3rem;
+    font-size: 0.6em;
+    border-radius: 10px;
+  }
+  .gridDeskContainer .gridCol2 .gridItem:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+  }
+  .gridDeskContainer .gridCol2 .gridItem img {
+    width: 100%;
+    max-width: 340px;
+    aspect-ratio: 16/9;
+    -o-object-fit: cover;
+       object-fit: cover;
+    padding: 0.2rem;
+  }
+  .gridDeskContainer .gridCol2 .gridItem h2 {
+    margin: 0.5rem;
+    text-align: center;
+  }
+  .gridDeskContainer .gridCol3 {
+    display: grid;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #eaeaea;
+  }
+  .gridDeskContainer .gridCol3 .gridItem {
+    background-color: #4b4b4b;
+    min-height: 20vh;
+    max-height: 50vh;
+    width: 45vw;
+    max-width: 340px;
+    margin: 0.3rem;
+    font-size: 0.6em;
+    border-radius: 10px;
+  }
+  .gridDeskContainer .gridCol3 .gridItem:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+  }
+  .gridDeskContainer .gridCol3 .gridItem img {
+    width: 100%;
+    max-width: 340px;
+    aspect-ratio: 16/9;
+    -o-object-fit: cover;
+       object-fit: cover;
+    padding: 0.2rem;
+  }
+  .gridDeskContainer .gridCol3 .gridItem h2 {
+    margin: 0.5rem;
+    text-align: center;
+  }
+  .gridDeskContainer .gridCol4 {
+    display: grid;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #eaeaea;
+  }
+  .gridDeskContainer .gridCol4 .gridItem {
+    background-color: #4b4b4b;
+    min-height: 20vh;
+    max-height: 50vh;
+    width: 45vw;
+    max-width: 340px;
+    margin: 0.3rem;
+    font-size: 0.6em;
+    border-radius: 10px;
+  }
+  .gridDeskContainer .gridCol4 .gridItem:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+  }
+  .gridDeskContainer .gridCol4 .gridItem img {
+    width: 100%;
+    max-width: 340px;
+    aspect-ratio: 16/9;
+    -o-object-fit: cover;
+       object-fit: cover;
+    padding: 0.2rem;
+  }
+  .gridDeskContainer .gridCol4 .gridItem h2 {
+    margin: 0.5rem;
+    text-align: center;
   }
 }/*# sourceMappingURL=studio.css.map */
