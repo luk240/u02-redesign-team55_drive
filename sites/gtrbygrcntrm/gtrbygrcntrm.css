@@ -2,8 +2,7 @@
 .footer {
   display: grid;
   grid-template-columns: auto auto auto;
-  -moz-column-gap: 2em;
-       column-gap: 2em;
+  column-gap: 2em;
   row-gap: 2em;
   background-color: #2c2c2c;
   padding: 2em;
@@ -30,8 +29,6 @@
   align-items: center;
   justify-content: center;
   height: 36px;
-  max-width: -webkit-max-content;
-  max-width: -moz-max-content;
   max-width: max-content;
   background-color: #eaeaea;
   color: #4b4b4b;
@@ -363,7 +360,6 @@ ul.breadcrumb li a:hover {
 .item {
   display: grid;
   gap: 1rem;
-  grid-template-rows: -webkit-min-content;
   grid-template-rows: min-content;
   background: #4b4b4b;
   border-radius: 10px;
@@ -373,8 +369,7 @@ ul.breadcrumb li a:hover {
   padding: 0.5rem;
   inline-size: 100%;
   aspect-ratio: 16/9;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 10px;
 }
 .item a {
@@ -392,8 +387,6 @@ ul.breadcrumb li a:hover {
   align-items: center;
   justify-content: center;
   height: 36px;
-  max-width: -webkit-max-content;
-  max-width: -moz-max-content;
   max-width: max-content;
   background-color: #fcc700;
   color: #4b4b4b;
@@ -416,8 +409,7 @@ ul.breadcrumb li a:hover {
 }
 
 .snaps-inline {
-  -ms-scroll-snap-type: inline mandatory;
-      scroll-snap-type: inline mandatory;
+  scroll-snap-type: inline mandatory;
   scroll-padding-inline: 1rem;
 }
 .snaps-inline * {
@@ -442,7 +434,6 @@ ul.breadcrumb li a:hover {
 ::-webkit-scrollbar-thumb:hover {
   background: lightgray;
   transform: scale(1.1);
-  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
@@ -469,8 +460,7 @@ ul.breadcrumb li a:hover {
 
 .grid-container {
   display: grid;
-  -moz-column-gap: 5%;
-       column-gap: 5%;
+  column-gap: 5%;
   row-gap: 1rem;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
@@ -495,8 +485,7 @@ ul.breadcrumb li a:hover {
 .grid-img {
   width: 100%;
   height: 230px;
-  -o-object-fit: scale-down;
-     object-fit: scale-down;
+  object-fit: scale-down;
   transition: 0.5s ease;
 }
 
@@ -584,30 +573,25 @@ body p {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-main {
+div.grid-cont {
   margin: 0 auto;
 }
 
-section {
-  /*max-width: 800px;*/
-}
-section h1 {
+main h1 {
   text-align: center;
 }
-section #persons {
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
+main #persons {
   height: fit-content;
 }
-section #persons figure {
+main #persons figure {
   text-align: center;
 }
-section #persons figure img {
+main #persons figure img {
   width: 100%;
   max-width: 800px;
   border-radius: 1rem;
 }
-section #persons div.person {
+main #persons div.person {
   background-color: white;
   padding: 0.5rem;
   border-radius: 0.5rem;
@@ -629,14 +613,16 @@ label#qna-btn ::before {
   position: absolute;
   content: "↓";
   left: 0;
-  text-indent: 1em;
+  text-indent: 5px;
+  margin-top: -0.2em;
   font-size: 3rem;
 }
 label#qna-btn ::after {
   position: absolute;
   content: "↓";
   right: 0;
-  margin-right: 1em;
+  margin-right: 5px;
+  margin-top: -0.2em;
   font-size: 3rem;
 }
 
@@ -650,8 +636,13 @@ label#qna-btn ::after {
 aside {
   /*max-width: 400px;*/
 }
-aside label h2 {
+aside label > span {
   text-align: center;
+  color: #fcc700;
+  font-size: 2.5rem;
+  font-family: Economica;
+  display: block;
+  margin: 0 auto;
 }
 aside div.qna {
   border-top: 1px solid black;
@@ -685,31 +676,32 @@ aside div.qna p {
 small {
   display: inline-block;
   width: 100%;
-  height: 100%;
+  height: fit-content;
   text-align: center;
   text-decoration: underline;
 }
 
+footer {
+  height: fit-content;
+}
+
 @media screen and (min-width: 1000px) {
-  main {
-    display: flex;
-    justify-content: center;
+  div.grid-cont {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
     margin: 0 1rem;
     gap: 1rem;
   }
-  main section {
+  div.grid-cont main {
     flex: 100%;
   }
-  main aside {
-    flex: 50%;
-  }
-  main aside label#qna-btn {
+  div.grid-cont aside label#qna-btn {
     all: initial;
   }
-  main aside label#qna-btn ::before, main aside label#qna-btn ::after {
+  div.grid-cont aside label#qna-btn ::before, div.grid-cont aside label#qna-btn ::after {
     all: unset;
   }
-  main aside div.qna {
+  div.grid-cont aside div.qna {
     border: 1px solid black;
   }
   #qna-btn + #qna-show[type=checkbox]:not(:checked) ~ #qnas {
@@ -718,4 +710,4 @@ small {
   #qna-btn {
     pointer-events: none;
   }
-}/*# sourceMappingURL=gtrbygrcntrm.css.map */
+}
