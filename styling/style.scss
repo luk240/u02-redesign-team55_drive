@@ -1,7 +1,7 @@
 $Col1: #fcc700;
-$Col2: #2c2c2c; 
+$Col2: #2c2c2c;
 $Col3: #4b4b4b;
-$Col4: #eaeaea;  
+$Col4: #eaeaea;
 $Font1: Arial, Helvetica, sans-serif;
 
 @import "./footer";
@@ -242,6 +242,13 @@ ul.breadcrumb li a:hover{
 /*===================
  Slider
 ===================*/
+.highlightsHeader{
+    font-family: Economica;
+    font-size: 3em;
+    text-align: center;
+    color: $Col1;
+    margin: 2rem;
+}
 .studioSlider{
     padding-inline: 1rem;
     margin-bottom: 2rem;
@@ -275,6 +282,9 @@ ul.breadcrumb li a:hover{
         aspect-ratio: 16/9;
         object-fit: cover;
         border-radius: 10px;
+    }
+    a{
+      cursor: pointer;
     }
     p{
         margin: .5rem;
@@ -347,24 +357,31 @@ ul.breadcrumb li a:hover{
 /*===================
  Grid categories
 ===================*/
+.kategorierHeader{
+  font-family: Economica;
+  font-size: 3em;
+  text-align: center;
+  color: $Col1;
+  margin: 2rem;
+}
 .grid-container {
 	display: grid;
 	column-gap: 5%;
 	row-gap: 1rem;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: auto;
-	border: 3px solid black;
 	padding: 1rem 1rem;
 }
 .grid-item > div {
 	position: relative;
-	border: solid brown calc(0.6vmin);
+	border: solid $Col3 calc(0.6vmin);
 	border-radius: 1em;
 	max-width: 300px;
 	margin: 20px auto;
 }
 .grid-item div > h2 {
-	font-size: calc(10px + 0.5vw);
+	font-family: Economica;
+	font-size: calc(14px + 0.5vw);
 	position: absolute;
 	top: -45px; /*fix zoom-out*/
 }
@@ -382,9 +399,10 @@ ul.breadcrumb li a:hover{
 	transition: 0.2s ease;
 	transform: translate(-50%, -50%);
 	text-align: center;
-	background-color: rgba(255,130,100,0.5);
+	background-color: rgba(75,75,75,0.55);
 	color: white;
 	font-size: 16px;
+	font-family: $Font1;
 	padding: 16px 0px;
 	pointer-events: none;
 	width: 100%;

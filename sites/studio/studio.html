@@ -13,10 +13,27 @@
 </head>
 <body>
     <header>
-        <nav>
-            <h1>Nav-bar</h1>
-            <!--Här ligger menyn i mobilversionen-->
-        </nav>
+        /*<nav class="header">
+		<div class="logo">
+			<a href="index.html"><img src="../../pictures/jam.png" alt="Logo"></a>
+		</div>
+  	<ul class="breadcrumb">
+  	  <li><a href="#">Start</a></li>
+  	  <li></li>
+  	</ul>
+		<div class="navigation">
+			<input type="checkbox" class="toggle-menu">
+			<div class="hamburger"></div>
+			<ul class="menu">
+				<li><a href="index.html" class="active">Start</a></li>
+				<li><a href="./sites/butiker.html" class="">Butiker</a></li>
+				<li><a href="./sites/fungerar.html" class="">Så funkar det</a></li>
+				<li><a href="./sites/gtrbygrcntrm/gtrbygrcntrm.html" class="">Gitarrbyggarcentrum</a></li>
+				<li><a href="./sites/omOss/omOss.html" class="">Om oss</a></li>
+				<li><a href="./sites/kontakt.html" class="">Kontakta Jam</a></li>
+			</ul>
+		</div>
+	</nav>
     </header>
     <!--Start studio section-->
     <section>
@@ -36,33 +53,33 @@
             <!--Slider-->
             <div class="sliderContainer snaps-inline">
                 <div class="item">
-                    <img src="./Pictures/studioLurar.jpg" alt="En bild på produkten">
-                    <p class="itemName">Produkt</p>
-                    <p class="itemPrice">1000:-</p>
+                    <a href="../produkt.html"><img src="../../pictures/mikrofon.jpg" alt="En bild på AKG D112 mkII"></a>
+                    <p class="itemName">AKG D112 mkII</p>
+                    <p class="itemPrice">1895:-</p>
+                    <button type="button" class="itemBtn">Köp</button>
+                </div>
+                <div class="item">
+                    <a href="../produkt2.html"><img src="../../pictures/Adam Hall LD Devil Shield RF1.jpeg" alt="En bild på Adam Hall Devil Shield RF1"></a>
+                    <p class="itemName">Adam Hall Devil Shield RF1</p>
+                    <p class="itemPrice">1095:-</p>
+                    <button type="button" class="itemBtn">Köp</button>
+                </div>
+                <div class="item">
+                    <a href="../produkt3.html"><img src="../../pictures/AKG_C3000.jpg" alt="En bild på AKG C3000"></a>
+                    <p class="itemName">AKG C3000</p>
+                    <p class="itemPrice">2595:-</p>
+                    <button type="button" class="itemBtn">Köp</button>
+                </div>
+                <div class="item">
+                    <a href="../produkt4.html"><img src="../../pictures/AKG_C314.jpg" alt="En bild på AKG C314"></a>
+                    <p class="itemName">AKG C314Produkt</p>
+                    <p class="itemPrice">2595:-</p>
                     <button type="button" class="itemBtn">Köp</button>
                 </div>
                 <div class="item">
                     <img src="./" alt="En bild på produkten">
                     <p class="itemName">Produkt</p>
-                    <p class="itemPrice">1000:-</p>
-                    <button type="button" class="itemBtn">Köp</button>
-                </div>
-                <div class="item">
-                    <img src="./" alt="En bild på produkten">
-                    <p class="itemName">Produkt</p>
-                    <p class="itemPrice">1000:-</p>
-                    <button type="button" class="itemBtn">Köp</button>
-                </div>
-                <div class="item">
-                    <img src="./" alt="En bild på produkten">
-                    <p class="itemName">Produkt</p>
-                    <p class="itemPrice">1000:-</p>
-                    <button type="button" class="itemBtn">Köp</button>
-                </div>
-                <div class="item">
-                    <img src="./" alt="En bild på produkten">
-                    <p class="itemName">Produkt</p>
-                    <p class="itemPrice">1000 :-</p>
+                    <p class="itemPrice">0.00:-</p>
                     <button type="button" class="itemBtn">Köp</button>
                 </div>
             </div>
@@ -79,6 +96,7 @@
                             <img src="./Pictures/studioBandare.jpg" alt="Bild på bandare">
                         </a>
                         <h2>Digitalporta / bandare</h2>
+                        <p class="soon">Kommer snart</p>
                     </div>
                 </div>
                 <div class="gridItem">
@@ -87,6 +105,7 @@
                             <img src="./Pictures/studioEffektprocessor.jpeg" alt="Bild på EQ">
                         </a>
                         <h2>Effektprocessor / EQ</h2>
+                        <p class="soon">Kommer snart</p>
                     </div>
                 </div>
                 <div class="gridItem">
@@ -95,6 +114,7 @@
                             <img src="./Pictures/studioLurar.jpg" alt="Bild på hörlurar">
                         </a>
                         <h2>Hörlurar &amp; tillbehör</h2>
+                        <p class="soon">Kommer snart</p>
                     </div>
                 </div>
                 <div class="gridItem">
@@ -103,6 +123,7 @@
                             <img src="./Pictures/studioLjudkort.jpg" alt="En bild på ljudkort">
                         </a>
                         <h2>Ljudkort</h2>
+                        <p class="soon">Kommer snart</p>
                     </div>
                 </div>
             </div>
@@ -113,6 +134,7 @@
                             <img src="./Pictures/studioMic.jpg" alt="En bild på mikrofon">
                         </a>
                         <h2>Mikrofon &amp; tillbehör</h2>
+                        <p class="kampanj">Jul kampanj</p>
                     </div>
                 </div>
                 <div class="gridItem">
@@ -121,6 +143,7 @@
                             <img src="./Pictures/studioMixer.JPG" alt="En bild på mixerbord">
                         </a>
                          <h2>Mixerbord</h2>
+                         <p class="soon">Kommer snart</p>
                     </div>
                 </div>
                 <div class="gridItem">
@@ -129,6 +152,7 @@
                             <img src="./Pictures/studioProgram.jpg" alt="En bild på programvara">
                         </a>
                         <h2>Programvara PC / MAC</h2>
+                        <p class="soon">Kommer snart</p>
                     </div>
                 </div>
                 <div class="gridItem">
@@ -137,6 +161,7 @@
                             <img src="./Pictures/studioMonitor.jpg" alt="En bild på studiomonitor">
                         </a>
                         <h2>Monitorer &amp; tillbehör</h2>
+                        <p class="soon">Kommer snart</p>
                     </div>
                 </div>
             </div>

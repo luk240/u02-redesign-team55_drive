@@ -71,12 +71,32 @@ nav{
     background: $Col3;
     border-radius: 10px;
     box-shadow: .5rem;
+    &:hover{
+        background-color: lightgray;
+        p{
+            color: black;
+        }
+    }
+    }
     img{
         padding: .5rem;
         inline-size: 100%;
         aspect-ratio: 16/9;
         object-fit: cover;
         border-radius: 10px;
+    }
+    a{
+        cursor: pointer;
+    }
+    .soon{
+        text-align: center;
+        font-size: 1.5em;
+        color: rgb(255, 103, 76);
+    }
+    .kampanj{
+        text-align: center;
+        font-size: 1.5em;
+        color: $Col1;
     }
     p{
         margin: .5rem;
@@ -110,7 +130,6 @@ nav{
             cursor: pointer;
         }
     }
-}
 .snaps-inline{
     scroll-snap-type: inline mandatory;
     scroll-padding-inline: 1rem;
@@ -161,6 +180,11 @@ nav{
             max-width: 340px;
             margin: .3rem;
             font-size: .6em;
+            border-radius: 10px;
+            &:hover{
+                transform: scale(1.05);
+                transition: .5s;
+            }
             img{
                 width: 100%;
                 max-width: 340px;
@@ -187,6 +211,11 @@ nav{
             max-width: 340px;
             margin: .3rem;
             font-size: .6em;
+            border-radius: 10px;
+            &:hover{
+                transform: scale(1.05);
+                transition: .5s;
+            }
             img{
                 width: 100%;
                 max-width: 340px;
