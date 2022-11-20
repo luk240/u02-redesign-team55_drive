@@ -240,11 +240,15 @@ body{
     }
     .studioSlider{
         .sliderHeader{
-            font-size: 3em;
+            h1{
+                font-size: 4em;
+            }
         }
     }
     .kategorierHeader{
-        font-size: 3em;
+        h1{
+            font-size: 2em;
+        }
     }
     .sliderContainer{
         display: grid;

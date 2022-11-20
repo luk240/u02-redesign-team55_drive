@@ -870,11 +870,11 @@ button:hover {
   .studioHeader {
     font-size: 4em;
   }
-  .studioSlider .sliderHeader {
-    font-size: 3em;
+  .studioSlider .sliderHeader h1 {
+    font-size: 4em;
   }
-  .kategorierHeader {
-    font-size: 3em;
+  .kategorierHeader h1 {
+    font-size: 2em;
   }
   .sliderContainer {
     display: grid;
